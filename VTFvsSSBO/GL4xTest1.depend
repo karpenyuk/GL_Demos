@@ -1,0 +1,3344 @@
+# depslib dependency file v1.0
+1427288894 source:d:\projects\gl4xtests\gl4xtest1\main.cpp
+	<stdlib.h>
+	<stdio.h>
+	<iostream>
+	"gl_helpers.h"
+	<GL/glut.h>
+	<GL/freeglut.h>
+	"common.h"
+
+1368265760 d:\projects\gl4xtests\freeglut\include\gl\glut.h
+	"freeglut_std.h"
+
+1368265760 d:\projects\gl4xtests\freeglut\include\gl\freeglut_std.h
+	<windows.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1368265760 d:\projects\gl4xtests\freeglut\include\gl\freeglut.h
+	"freeglut_std.h"
+	"freeglut_ext.h"
+
+1368265760 d:\projects\gl4xtests\freeglut\include\gl\freeglut_ext.h
+	<stdarg.h>
+
+1344270212 d:\projects\gl4xtests\glew-1.9.0\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1401706468 source:d:\projects\gl4xtests\gl4xtest1\src\gl_helpers.cpp
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<iostream>
+	<fstream>
+	<vector>
+	<assert.h>
+	"gl_helpers.h"
+	<glm/gtc/type_ptr.hpp>
+
+1413448770 d:\projects\gl4xtests\gl4xtest1\include\gl_helpers.h
+	<map>
+	<vector>
+	<string>
+	<tr1/memory>
+	<GL/glew.h>
+	<GL/wglew.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtx/transform.hpp>
+	<ft2build.h>
+	<freetype.h>
+	<ftglyph.h>
+	<ftoutln.h>
+	<fttrigon.h>
+
+1344270212 d:\projects\gl4xtests\glew-1.9.0\include\gl\wglew.h
+	<windows.h>
+
+1374470000 d:\projects\gl4xtests\glew-1.10.0\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1374470000 d:\projects\gl4xtests\glew-1.10.0\include\gl\wglew.h
+	<windows.h>
+
+1401723092 source:d:\projects\gl4xtests\gl4xtest1\src\primitives.cpp
+	"primitives.h"
+	<vector>
+	<math.h>
+
+1401723047 d:\projects\gl4xtests\gl4xtest1\include\primitives.h
+	"gl_helpers.h"
+
+1401279949 d:\projects\gl4xtests\gl4xtest1\include\shaders.h
+
+1389476280 d:\projects\gl4xtests\glm\\glm\glm.hpp
+	"detail/_fixes.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1389476280 d:\projects\gl4xtests\glm\\glm\detail\_fixes.hpp
+	<cmath>
+
+1389476280 d:\projects\gl4xtests\glm\\glm\fwd.hpp
+	"detail/type_int.hpp"
+	"detail/type_float.hpp"
+	"detail/type_vec.hpp"
+	"detail/type_mat.hpp"
+
+1389476280 d:\projects\gl4xtests\glm\\glm\detail\type_int.hpp
+	"setup.hpp"
+	<cstdint>
+
+1396299660 d:\projects\gl4xtests\glm\\glm\detail\setup.hpp
+	<cassert>
+	<cuda.h>
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<smmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1389476280 d:\projects\gl4xtests\glm\\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1389476280 d:\projects\gl4xtests\glm\\glm\detail\type_vec.hpp
+	"precision.hpp"
+	"type_int.hpp"
+
+1389476280 d:\projects\gl4xtests\glm\\glm\detail\precision.hpp
+
+1389476280 d:\projects\gl4xtests\glm\\glm\detail\type_mat.hpp
+	"precision.hpp"
+
+1389476280 d:\projects\gl4xtests\glm\\glm\vec2.hpp
+	"detail/type_vec2.hpp"
+
+1395786354 d:\projects\gl4xtests\glm\\glm\detail\type_vec2.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1389476280 d:\projects\gl4xtests\glm\\glm\detail\_swizzle.hpp
+
+1389476280 d:\projects\gl4xtests\glm\\glm\detail\_swizzle_func.hpp
+
+1393350478 d:\projects\gl4xtests\glm\\glm\detail\type_vec2.inl
+
+1389476280 d:\projects\gl4xtests\glm\\glm\vec3.hpp
+	"detail/type_vec3.hpp"
+
+1395786354 d:\projects\gl4xtests\glm\\glm\detail\type_vec3.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1393350478 d:\projects\gl4xtests\glm\\glm\detail\type_vec3.inl
+
+1389476280 d:\projects\gl4xtests\glm\\glm\vec4.hpp
+	"detail/type_vec4.hpp"
+
+1395786354 d:\projects\gl4xtests\glm\\glm\detail\type_vec4.hpp
+	"setup.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1395786354 d:\projects\gl4xtests\glm\\glm\detail\type_vec4.inl
+
+1389476280 d:\projects\gl4xtests\glm\\glm\mat2x2.hpp
+	"detail/type_mat2x2.hpp"
+
+1395786354 d:\projects\gl4xtests\glm\\glm\detail\type_mat2x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_mat.hpp"
+	<limits>
+	"type_mat2x2.inl"
+
+1395786354 d:\projects\gl4xtests\glm\\glm\detail\type_mat2x2.inl
+
+1389476280 d:\projects\gl4xtests\glm\\glm\mat2x3.hpp
+	"detail/type_mat2x3.hpp"
+
+1395786354 d:\projects\gl4xtests\glm\\glm\detail\type_mat2x3.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	"type_mat2x3.inl"
+
+1393348394 d:\projects\gl4xtests\glm\\glm\detail\type_mat2x3.inl
+
+1389476280 d:\projects\gl4xtests\glm\\glm\mat2x4.hpp
+	"detail/type_mat2x4.hpp"
+
+1395786354 d:\projects\gl4xtests\glm\\glm\detail\type_mat2x4.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	"type_mat2x4.inl"
+
+1393348394 d:\projects\gl4xtests\glm\\glm\detail\type_mat2x4.inl
+
+1389476280 d:\projects\gl4xtests\glm\\glm\mat3x2.hpp
+	"detail/type_mat3x2.hpp"
+
+1395786354 d:\projects\gl4xtests\glm\\glm\detail\type_mat3x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	"type_mat3x2.inl"
+
+1393348394 d:\projects\gl4xtests\glm\\glm\detail\type_mat3x2.inl
+
+1389476280 d:\projects\gl4xtests\glm\\glm\mat3x3.hpp
+	"detail/type_mat3x3.hpp"
+
+1395786354 d:\projects\gl4xtests\glm\\glm\detail\type_mat3x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	"type_mat3x3.inl"
+
+1395786354 d:\projects\gl4xtests\glm\\glm\detail\type_mat3x3.inl
+
+1389476280 d:\projects\gl4xtests\glm\\glm\mat3x4.hpp
+	"detail/type_mat3x4.hpp"
+
+1395786354 d:\projects\gl4xtests\glm\\glm\detail\type_mat3x4.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	"type_mat3x4.inl"
+
+1393348394 d:\projects\gl4xtests\glm\\glm\detail\type_mat3x4.inl
+
+1389476280 d:\projects\gl4xtests\glm\\glm\mat4x2.hpp
+	"detail/type_mat4x2.hpp"
+
+1395786354 d:\projects\gl4xtests\glm\\glm\detail\type_mat4x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	"type_mat4x2.inl"
+
+1393348394 d:\projects\gl4xtests\glm\\glm\detail\type_mat4x2.inl
+
+1389476280 d:\projects\gl4xtests\glm\\glm\mat4x3.hpp
+	"detail/type_mat4x3.hpp"
+
+1395786354 d:\projects\gl4xtests\glm\\glm\detail\type_mat4x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	"type_mat4x3.inl"
+
+1393348394 d:\projects\gl4xtests\glm\\glm\detail\type_mat4x3.inl
+
+1389476280 d:\projects\gl4xtests\glm\\glm\mat4x4.hpp
+	"detail/type_mat4x4.hpp"
+
+1395786354 d:\projects\gl4xtests\glm\\glm\detail\type_mat4x4.hpp
+	"../fwd.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1393348394 d:\projects\gl4xtests\glm\\glm\detail\type_mat4x4.inl
+
+1389476280 d:\projects\gl4xtests\glm\\glm\trigonometric.hpp
+	"detail/func_trigonometric.hpp"
+
+1389476280 d:\projects\gl4xtests\glm\\glm\detail\func_trigonometric.hpp
+	"func_trigonometric.inl"
+
+1389476280 d:\projects\gl4xtests\glm\\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+
+1393348394 d:\projects\gl4xtests\glm\\glm\detail\_vectorize.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+
+1395786354 d:\projects\gl4xtests\glm\\glm\detail\type_vec1.hpp
+	"../fwd.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec1.inl"
+
+1393350478 d:\projects\gl4xtests\glm\\glm\detail\type_vec1.inl
+
+1389476280 d:\projects\gl4xtests\glm\\glm\exponential.hpp
+	"detail/func_exponential.hpp"
+
+1393348394 d:\projects\gl4xtests\glm\\glm\detail\func_exponential.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<cmath>
+	"func_exponential.inl"
+
+1396300506 d:\projects\gl4xtests\glm\\glm\detail\func_exponential.inl
+	"func_vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cassert>
+
+1389476280 d:\projects\gl4xtests\glm\\glm\detail\func_vector_relational.hpp
+	"precision.hpp"
+	"setup.hpp"
+	"func_vector_relational.inl"
+
+1389476280 d:\projects\gl4xtests\glm\\glm\detail\func_vector_relational.inl
+	<limits>
+
+1389476280 d:\projects\gl4xtests\glm\\glm\common.hpp
+	"detail/func_common.hpp"
+
+1391887702 d:\projects\gl4xtests\glm\\glm\detail\func_common.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"type_int.hpp"
+	"_fixes.hpp"
+	"func_common.inl"
+
+1393348394 d:\projects\gl4xtests\glm\\glm\detail\func_common.inl
+	"func_vector_relational.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+
+1389476280 d:\projects\gl4xtests\glm\\glm\packing.hpp
+	"detail/func_packing.hpp"
+
+1389476280 d:\projects\gl4xtests\glm\\glm\detail\func_packing.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"func_packing.inl"
+
+1393348394 d:\projects\gl4xtests\glm\\glm\detail\func_packing.inl
+	"func_common.hpp"
+	"type_half.hpp"
+	"../fwd.hpp"
+
+1389476280 d:\projects\gl4xtests\glm\\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1389476280 d:\projects\gl4xtests\glm\\glm\detail\type_half.inl
+
+1389476280 d:\projects\gl4xtests\glm\\glm\geometric.hpp
+	"detail/func_geometric.hpp"
+
+1389476280 d:\projects\gl4xtests\glm\\glm\detail\func_geometric.hpp
+	"type_vec3.hpp"
+	"func_geometric.inl"
+
+1396299936 d:\projects\gl4xtests\glm\\glm\detail\func_geometric.inl
+	"func_exponential.hpp"
+	"func_common.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_float.hpp"
+
+1389476280 d:\projects\gl4xtests\glm\\glm\matrix.hpp
+	"detail/func_matrix.hpp"
+
+1389476280 d:\projects\gl4xtests\glm\\glm\detail\func_matrix.hpp
+	"../detail/precision.hpp"
+	"../detail/setup.hpp"
+	"../detail/type_mat.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	"func_matrix.inl"
+
+1395786354 d:\projects\gl4xtests\glm\\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+
+1389476280 d:\projects\gl4xtests\glm\\glm\vector_relational.hpp
+	"detail/func_vector_relational.hpp"
+
+1389476280 d:\projects\gl4xtests\glm\\glm\integer.hpp
+	"detail/func_integer.hpp"
+
+1389476280 d:\projects\gl4xtests\glm\\glm\detail\func_integer.hpp
+	"setup.hpp"
+	"func_integer.inl"
+
+1395786354 d:\projects\gl4xtests\glm\\glm\detail\func_integer.inl
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_int.hpp"
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+
+1389476280 d:\projects\gl4xtests\glm\\glm\gtc\type_ptr.hpp
+	"../gtc/quaternion.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	<cstring>
+	"type_ptr.inl"
+
+1393348394 d:\projects\gl4xtests\glm\\glm\gtc\quaternion.hpp
+	"../mat3x3.hpp"
+	"../mat4x4.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"quaternion.inl"
+
+1393348394 d:\projects\gl4xtests\glm\\glm\gtc\constants.hpp
+	"../detail/setup.hpp"
+	"constants.inl"
+
+1389476280 d:\projects\gl4xtests\glm\\glm\gtc\constants.inl
+	<limits>
+
+1393348394 d:\projects\gl4xtests\glm\\glm\gtc\quaternion.inl
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"../exponential.hpp"
+	<limits>
+
+1389476280 d:\projects\gl4xtests\glm\\glm\gtc\type_ptr.inl
+	<cstring>
+
+1389476280 d:\projects\gl4xtests\glm\\glm\gtc\matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"matrix_transform.inl"
+
+1394931548 d:\projects\gl4xtests\glm\\glm\gtc\matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1394912748 d:\projects\gl4xtests\glm\\glm\gtx\transform.hpp
+	"../glm.hpp"
+	"../gtc/matrix_transform.hpp"
+	"transform.inl"
+
+1389476280 d:\projects\gl4xtests\glm\\glm\gtx\transform.inl
+
+1384332396 d:\projects\gl4xtests\freetype\include\ft2build.h
+	<config/ftheader.h>
+
+1384255659 d:\projects\gl4xtests\freetype\include\config\ftheader.h
+
+1394129431 d:\projects\gl4xtests\freetype\include\freetype.h
+	<ft2build.h>
+
+1378195803 d:\projects\gl4xtests\freetype\include\ftglyph.h
+	<ft2build.h>
+
+1391150767 d:\projects\gl4xtests\freetype\include\ftoutln.h
+	<ft2build.h>
+
+1369771203 d:\projects\gl4xtests\freetype\include\fttrigon.h
+
+1427299573 d:\projects\gl4xtests\gl4xtest1\include\common.h
+	<stdlib.h>
+	<stdio.h>
+	"gl_helpers.h"
+	"primitives.h"
+
+1427299452 source:d:\projects\gl4xtests\gl4xtest1\common.cpp
+	"common.h"
+	"sdeDemo.inl"
+	"demo1.inl"
+	"demo2.inl"
+	"demo3.inl"
+	"demo4.inl"
+	"demo5.inl"
+	"demo6.inl"
+	"demo7.inl"
+
+1427201462 d:\projects\gl4xtests\gl4xtest1\demo1.inl
+
+1427201477 d:\projects\gl4xtests\gl4xtest1\demo2.inl
+
+1427207281 d:\projects\gl4xtests\gl4xtest1\demo3.inl
+
+1427207297 d:\projects\gl4xtests\gl4xtest1\demo4.inl
+
+1427207313 d:\projects\gl4xtests\gl4xtest1\demo5.inl
+
+1427304608 d:\projects\gl4xtests\gl4xtest1\demo6.inl
+
+1402058595 d:\projects\gl4xtests\gl4xtest1\sdedemo.inl
+
+1427207366 d:\projects\gl4xtests\gl4xtest1\demo7.inl
+
+1446990990 source:f:\backup\projects\gl4xtests\gl4xtest1\common.cpp
+	"common.h"
+	"mcube.inl"
+	"font.inl"
+	"demo1.inl"
+	"demo2.inl"
+	"demo3.inl"
+	"demo4.inl"
+	"demo5.inl"
+	"demo6.inl"
+	"demo7.inl"
+	"demo8.inl"
+
+1454009456 f:\backup\projects\gl4xtests\gl4xtest1\include\common.h
+	<stdlib.h>
+	<stdio.h>
+	"gl_helpers.h"
+	"primitives.h"
+
+1441458617 f:\backup\projects\gl4xtests\gl4xtest1\include\gl_helpers.h
+	<map>
+	<vector>
+	<string>
+	<tr1/memory>
+	<GL/glew.h>
+	<GL/wglew.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtx/transform.hpp>
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\glm.hpp
+	"detail/_fixes.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\detail\_fixes.hpp
+	<cmath>
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\fwd.hpp
+	"detail/type_int.hpp"
+	"detail/type_float.hpp"
+	"detail/type_vec.hpp"
+	"detail/type_mat.hpp"
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\detail\type_int.hpp
+	"setup.hpp"
+	<cstdint>
+
+1396303260 f:\backup\projects\gl4xtests\glm\\glm\detail\setup.hpp
+	<cassert>
+	<cuda.h>
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<smmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\detail\type_vec.hpp
+	"precision.hpp"
+	"type_int.hpp"
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\detail\precision.hpp
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\detail\type_mat.hpp
+	"precision.hpp"
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\vec2.hpp
+	"detail/type_vec2.hpp"
+
+1395786354 f:\backup\projects\gl4xtests\glm\\glm\detail\type_vec2.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\detail\_swizzle.hpp
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\detail\_swizzle_func.hpp
+
+1393350478 f:\backup\projects\gl4xtests\glm\\glm\detail\type_vec2.inl
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\vec3.hpp
+	"detail/type_vec3.hpp"
+
+1395786354 f:\backup\projects\gl4xtests\glm\\glm\detail\type_vec3.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1393350478 f:\backup\projects\gl4xtests\glm\\glm\detail\type_vec3.inl
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\vec4.hpp
+	"detail/type_vec4.hpp"
+
+1395786354 f:\backup\projects\gl4xtests\glm\\glm\detail\type_vec4.hpp
+	"setup.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1395786354 f:\backup\projects\gl4xtests\glm\\glm\detail\type_vec4.inl
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\mat2x2.hpp
+	"detail/type_mat2x2.hpp"
+
+1395786354 f:\backup\projects\gl4xtests\glm\\glm\detail\type_mat2x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_mat.hpp"
+	<limits>
+	"type_mat2x2.inl"
+
+1395786354 f:\backup\projects\gl4xtests\glm\\glm\detail\type_mat2x2.inl
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\mat2x3.hpp
+	"detail/type_mat2x3.hpp"
+
+1395786354 f:\backup\projects\gl4xtests\glm\\glm\detail\type_mat2x3.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	"type_mat2x3.inl"
+
+1393348394 f:\backup\projects\gl4xtests\glm\\glm\detail\type_mat2x3.inl
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\mat2x4.hpp
+	"detail/type_mat2x4.hpp"
+
+1395786354 f:\backup\projects\gl4xtests\glm\\glm\detail\type_mat2x4.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	"type_mat2x4.inl"
+
+1393348394 f:\backup\projects\gl4xtests\glm\\glm\detail\type_mat2x4.inl
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\mat3x2.hpp
+	"detail/type_mat3x2.hpp"
+
+1395786354 f:\backup\projects\gl4xtests\glm\\glm\detail\type_mat3x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	"type_mat3x2.inl"
+
+1393348394 f:\backup\projects\gl4xtests\glm\\glm\detail\type_mat3x2.inl
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\mat3x3.hpp
+	"detail/type_mat3x3.hpp"
+
+1395786354 f:\backup\projects\gl4xtests\glm\\glm\detail\type_mat3x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	"type_mat3x3.inl"
+
+1395786354 f:\backup\projects\gl4xtests\glm\\glm\detail\type_mat3x3.inl
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\mat3x4.hpp
+	"detail/type_mat3x4.hpp"
+
+1395786354 f:\backup\projects\gl4xtests\glm\\glm\detail\type_mat3x4.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	"type_mat3x4.inl"
+
+1393348394 f:\backup\projects\gl4xtests\glm\\glm\detail\type_mat3x4.inl
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\mat4x2.hpp
+	"detail/type_mat4x2.hpp"
+
+1395786354 f:\backup\projects\gl4xtests\glm\\glm\detail\type_mat4x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	"type_mat4x2.inl"
+
+1393348394 f:\backup\projects\gl4xtests\glm\\glm\detail\type_mat4x2.inl
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\mat4x3.hpp
+	"detail/type_mat4x3.hpp"
+
+1395786354 f:\backup\projects\gl4xtests\glm\\glm\detail\type_mat4x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	"type_mat4x3.inl"
+
+1393348394 f:\backup\projects\gl4xtests\glm\\glm\detail\type_mat4x3.inl
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\mat4x4.hpp
+	"detail/type_mat4x4.hpp"
+
+1395786354 f:\backup\projects\gl4xtests\glm\\glm\detail\type_mat4x4.hpp
+	"../fwd.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1393348394 f:\backup\projects\gl4xtests\glm\\glm\detail\type_mat4x4.inl
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\trigonometric.hpp
+	"detail/func_trigonometric.hpp"
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\detail\func_trigonometric.hpp
+	"func_trigonometric.inl"
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+
+1393348394 f:\backup\projects\gl4xtests\glm\\glm\detail\_vectorize.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+
+1395786354 f:\backup\projects\gl4xtests\glm\\glm\detail\type_vec1.hpp
+	"../fwd.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec1.inl"
+
+1393350478 f:\backup\projects\gl4xtests\glm\\glm\detail\type_vec1.inl
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\exponential.hpp
+	"detail/func_exponential.hpp"
+
+1393348394 f:\backup\projects\gl4xtests\glm\\glm\detail\func_exponential.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<cmath>
+	"func_exponential.inl"
+
+1396304106 f:\backup\projects\gl4xtests\glm\\glm\detail\func_exponential.inl
+	"func_vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cassert>
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\detail\func_vector_relational.hpp
+	"precision.hpp"
+	"setup.hpp"
+	"func_vector_relational.inl"
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\detail\func_vector_relational.inl
+	<limits>
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\common.hpp
+	"detail/func_common.hpp"
+
+1391887702 f:\backup\projects\gl4xtests\glm\\glm\detail\func_common.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"type_int.hpp"
+	"_fixes.hpp"
+	"func_common.inl"
+
+1393348394 f:\backup\projects\gl4xtests\glm\\glm\detail\func_common.inl
+	"func_vector_relational.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\packing.hpp
+	"detail/func_packing.hpp"
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\detail\func_packing.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"func_packing.inl"
+
+1393348394 f:\backup\projects\gl4xtests\glm\\glm\detail\func_packing.inl
+	"func_common.hpp"
+	"type_half.hpp"
+	"../fwd.hpp"
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\detail\type_half.inl
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\geometric.hpp
+	"detail/func_geometric.hpp"
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\detail\func_geometric.hpp
+	"type_vec3.hpp"
+	"func_geometric.inl"
+
+1396303536 f:\backup\projects\gl4xtests\glm\\glm\detail\func_geometric.inl
+	"func_exponential.hpp"
+	"func_common.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_float.hpp"
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\matrix.hpp
+	"detail/func_matrix.hpp"
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\detail\func_matrix.hpp
+	"../detail/precision.hpp"
+	"../detail/setup.hpp"
+	"../detail/type_mat.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	"func_matrix.inl"
+
+1395786354 f:\backup\projects\gl4xtests\glm\\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\vector_relational.hpp
+	"detail/func_vector_relational.hpp"
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\integer.hpp
+	"detail/func_integer.hpp"
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\detail\func_integer.hpp
+	"setup.hpp"
+	"func_integer.inl"
+
+1395786354 f:\backup\projects\gl4xtests\glm\\glm\detail\func_integer.inl
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_int.hpp"
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\gtc\matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"matrix_transform.inl"
+
+1394931548 f:\backup\projects\gl4xtests\glm\\glm\gtc\matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1394912748 f:\backup\projects\gl4xtests\glm\\glm\gtx\transform.hpp
+	"../glm.hpp"
+	"../gtc/matrix_transform.hpp"
+	"transform.inl"
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\gtx\transform.inl
+
+1384335996 f:\backup\projects\gl4xtests\freetype\include\ft2build.h
+	<config/ftheader.h>
+
+1384259260 f:\backup\projects\gl4xtests\freetype\include\config\ftheader.h
+
+1394133032 f:\backup\projects\gl4xtests\freetype\include\freetype.h
+	<ft2build.h>
+
+1378203004 f:\backup\projects\gl4xtests\freetype\include\ftglyph.h
+	<ft2build.h>
+
+1391154368 f:\backup\projects\gl4xtests\freetype\include\ftoutln.h
+	<ft2build.h>
+
+1369778404 f:\backup\projects\gl4xtests\freetype\include\fttrigon.h
+
+1441384350 f:\backup\projects\gl4xtests\gl4xtest1\include\primitives.h
+	"gl_helpers.h"
+
+1438986518 f:\backup\projects\gl4xtests\gl4xtest1\sdedemo.inl
+
+1441386454 f:\backup\projects\gl4xtests\gl4xtest1\demo1.inl
+
+1441386384 f:\backup\projects\gl4xtests\gl4xtest1\demo2.inl
+
+1441386527 f:\backup\projects\gl4xtests\gl4xtest1\demo3.inl
+
+1441386621 f:\backup\projects\gl4xtests\gl4xtest1\demo4.inl
+
+1441386714 f:\backup\projects\gl4xtests\gl4xtest1\demo5.inl
+
+1441386775 f:\backup\projects\gl4xtests\gl4xtest1\demo6.inl
+
+1446991547 f:\backup\projects\gl4xtests\gl4xtest1\demo7.inl
+
+1454009492 source:f:\backup\projects\gl4xtests\gl4xtest1\main.cpp
+	<stdlib.h>
+	<stdio.h>
+	<fstream>
+	<iostream>
+	<sstream>
+	"gl_helpers.h"
+	<GL/glut.h>
+	<GL/freeglut.h>
+	"common.h"
+
+1368269360 f:\backup\projects\gl4xtests\freeglut\include\gl\glut.h
+	"freeglut_std.h"
+
+1368269360 f:\backup\projects\gl4xtests\freeglut\include\gl\freeglut_std.h
+	<windows.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1368269360 f:\backup\projects\gl4xtests\freeglut\include\gl\freeglut.h
+	"freeglut_std.h"
+	"freeglut_ext.h"
+
+1368269360 f:\backup\projects\gl4xtests\freeglut\include\gl\freeglut_ext.h
+	<stdarg.h>
+
+1441458642 source:f:\backup\projects\gl4xtests\gl4xtest1\src\gl_helpers.cpp
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<iostream>
+	<fstream>
+	<vector>
+	<assert.h>
+	"gl_helpers.h"
+	<glm/gtc/type_ptr.hpp>
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\gtc\type_ptr.hpp
+	"../gtc/quaternion.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	<cstring>
+	"type_ptr.inl"
+
+1393348394 f:\backup\projects\gl4xtests\glm\\glm\gtc\quaternion.hpp
+	"../mat3x3.hpp"
+	"../mat4x4.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"quaternion.inl"
+
+1393348394 f:\backup\projects\gl4xtests\glm\\glm\gtc\constants.hpp
+	"../detail/setup.hpp"
+	"constants.inl"
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\gtc\constants.inl
+	<limits>
+
+1393348394 f:\backup\projects\gl4xtests\glm\\glm\gtc\quaternion.inl
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"../exponential.hpp"
+	<limits>
+
+1389476280 f:\backup\projects\gl4xtests\glm\\glm\gtc\type_ptr.inl
+	<cstring>
+
+1441384342 source:f:\backup\projects\gl4xtests\gl4xtest1\src\primitives.cpp
+	"primitives.h"
+	<vector>
+	<math.h>
+
+1374473600 f:\backup\projects\gl4xtests\glew-1.10.0\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1374473600 f:\backup\projects\gl4xtests\glew-1.10.0\include\gl\wglew.h
+	<windows.h>
+
+1438982168 f:\backup\projects\gl4xtests\gl4xtest1\mcube.inl
+
+1441384540 f:\backup\projects\gl4xtests\gl4xtest1\font.inl
+
+1446991585 f:\backup\projects\gl4xtests\gl4xtest1\demo8.inl
+
+1493909523 source:f:\backup\projects\demoframework\colortest\src\gl_helpers.cpp
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<iostream>
+	<fstream>
+	<vector>
+	<assert.h>
+	"gl_helpers.h"
+	<glm/gtc/type_ptr.hpp>
+
+1493906791 f:\backup\projects\demoframework\colortest\include\gl_helpers.h
+	<map>
+	<vector>
+	<string>
+	<tr1/memory>
+	<GL/glew.h>
+	<GL/wglew.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtx/transform.hpp>
+
+1374477200 f:\backup\projects\demoframework\glew-1.10.0\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1374477200 f:\backup\projects\demoframework\glew-1.10.0\include\gl\wglew.h
+	<windows.h>
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\glm.hpp
+	"detail/_fixes.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\detail\_fixes.hpp
+	<cmath>
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\fwd.hpp
+	"detail/type_int.hpp"
+	"detail/type_float.hpp"
+	"detail/type_vec.hpp"
+	"detail/type_mat.hpp"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\detail\type_int.hpp
+	"setup.hpp"
+	<cstdint>
+
+1396306860 f:\backup\projects\demoframework\glm\\glm\detail\setup.hpp
+	<cassert>
+	<cuda.h>
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<smmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\detail\type_vec.hpp
+	"precision.hpp"
+	"type_int.hpp"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\detail\precision.hpp
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\detail\type_mat.hpp
+	"precision.hpp"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\vec2.hpp
+	"detail/type_vec2.hpp"
+
+1395789954 f:\backup\projects\demoframework\glm\\glm\detail\type_vec2.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\detail\_swizzle.hpp
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\detail\_swizzle_func.hpp
+
+1393354078 f:\backup\projects\demoframework\glm\\glm\detail\type_vec2.inl
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\vec3.hpp
+	"detail/type_vec3.hpp"
+
+1395789954 f:\backup\projects\demoframework\glm\\glm\detail\type_vec3.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1393354078 f:\backup\projects\demoframework\glm\\glm\detail\type_vec3.inl
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\vec4.hpp
+	"detail/type_vec4.hpp"
+
+1395789954 f:\backup\projects\demoframework\glm\\glm\detail\type_vec4.hpp
+	"setup.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1395789954 f:\backup\projects\demoframework\glm\\glm\detail\type_vec4.inl
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\mat2x2.hpp
+	"detail/type_mat2x2.hpp"
+
+1395789954 f:\backup\projects\demoframework\glm\\glm\detail\type_mat2x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_mat.hpp"
+	<limits>
+	"type_mat2x2.inl"
+
+1395789954 f:\backup\projects\demoframework\glm\\glm\detail\type_mat2x2.inl
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\mat2x3.hpp
+	"detail/type_mat2x3.hpp"
+
+1395789954 f:\backup\projects\demoframework\glm\\glm\detail\type_mat2x3.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	"type_mat2x3.inl"
+
+1393351994 f:\backup\projects\demoframework\glm\\glm\detail\type_mat2x3.inl
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\mat2x4.hpp
+	"detail/type_mat2x4.hpp"
+
+1395789954 f:\backup\projects\demoframework\glm\\glm\detail\type_mat2x4.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	"type_mat2x4.inl"
+
+1393351994 f:\backup\projects\demoframework\glm\\glm\detail\type_mat2x4.inl
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\mat3x2.hpp
+	"detail/type_mat3x2.hpp"
+
+1395789954 f:\backup\projects\demoframework\glm\\glm\detail\type_mat3x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	"type_mat3x2.inl"
+
+1393351994 f:\backup\projects\demoframework\glm\\glm\detail\type_mat3x2.inl
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\mat3x3.hpp
+	"detail/type_mat3x3.hpp"
+
+1395789954 f:\backup\projects\demoframework\glm\\glm\detail\type_mat3x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	"type_mat3x3.inl"
+
+1395789954 f:\backup\projects\demoframework\glm\\glm\detail\type_mat3x3.inl
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\mat3x4.hpp
+	"detail/type_mat3x4.hpp"
+
+1395789954 f:\backup\projects\demoframework\glm\\glm\detail\type_mat3x4.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	"type_mat3x4.inl"
+
+1393351994 f:\backup\projects\demoframework\glm\\glm\detail\type_mat3x4.inl
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\mat4x2.hpp
+	"detail/type_mat4x2.hpp"
+
+1395789954 f:\backup\projects\demoframework\glm\\glm\detail\type_mat4x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	"type_mat4x2.inl"
+
+1393351994 f:\backup\projects\demoframework\glm\\glm\detail\type_mat4x2.inl
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\mat4x3.hpp
+	"detail/type_mat4x3.hpp"
+
+1395789954 f:\backup\projects\demoframework\glm\\glm\detail\type_mat4x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	"type_mat4x3.inl"
+
+1393351994 f:\backup\projects\demoframework\glm\\glm\detail\type_mat4x3.inl
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\mat4x4.hpp
+	"detail/type_mat4x4.hpp"
+
+1395789954 f:\backup\projects\demoframework\glm\\glm\detail\type_mat4x4.hpp
+	"../fwd.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1393351994 f:\backup\projects\demoframework\glm\\glm\detail\type_mat4x4.inl
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\trigonometric.hpp
+	"detail/func_trigonometric.hpp"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\detail\func_trigonometric.hpp
+	"func_trigonometric.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+
+1393351994 f:\backup\projects\demoframework\glm\\glm\detail\_vectorize.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+
+1395789954 f:\backup\projects\demoframework\glm\\glm\detail\type_vec1.hpp
+	"../fwd.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec1.inl"
+
+1393354078 f:\backup\projects\demoframework\glm\\glm\detail\type_vec1.inl
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\exponential.hpp
+	"detail/func_exponential.hpp"
+
+1393351994 f:\backup\projects\demoframework\glm\\glm\detail\func_exponential.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<cmath>
+	"func_exponential.inl"
+
+1396307706 f:\backup\projects\demoframework\glm\\glm\detail\func_exponential.inl
+	"func_vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cassert>
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\detail\func_vector_relational.hpp
+	"precision.hpp"
+	"setup.hpp"
+	"func_vector_relational.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\detail\func_vector_relational.inl
+	<limits>
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\common.hpp
+	"detail/func_common.hpp"
+
+1391891302 f:\backup\projects\demoframework\glm\\glm\detail\func_common.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"type_int.hpp"
+	"_fixes.hpp"
+	"func_common.inl"
+
+1393351994 f:\backup\projects\demoframework\glm\\glm\detail\func_common.inl
+	"func_vector_relational.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\packing.hpp
+	"detail/func_packing.hpp"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\detail\func_packing.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"func_packing.inl"
+
+1393351994 f:\backup\projects\demoframework\glm\\glm\detail\func_packing.inl
+	"func_common.hpp"
+	"type_half.hpp"
+	"../fwd.hpp"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\detail\type_half.inl
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\geometric.hpp
+	"detail/func_geometric.hpp"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\detail\func_geometric.hpp
+	"type_vec3.hpp"
+	"func_geometric.inl"
+
+1396307136 f:\backup\projects\demoframework\glm\\glm\detail\func_geometric.inl
+	"func_exponential.hpp"
+	"func_common.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_float.hpp"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\matrix.hpp
+	"detail/func_matrix.hpp"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\detail\func_matrix.hpp
+	"../detail/precision.hpp"
+	"../detail/setup.hpp"
+	"../detail/type_mat.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	"func_matrix.inl"
+
+1395789954 f:\backup\projects\demoframework\glm\\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\vector_relational.hpp
+	"detail/func_vector_relational.hpp"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\integer.hpp
+	"detail/func_integer.hpp"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\detail\func_integer.hpp
+	"setup.hpp"
+	"func_integer.inl"
+
+1395789954 f:\backup\projects\demoframework\glm\\glm\detail\func_integer.inl
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_int.hpp"
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtc\matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"matrix_transform.inl"
+
+1394935148 f:\backup\projects\demoframework\glm\\glm\gtc\matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtx\transform.hpp
+	"../glm.hpp"
+	"../gtc/matrix_transform.hpp"
+	"transform.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\transform.inl
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtc\type_ptr.hpp
+	"../gtc/quaternion.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	<cstring>
+	"type_ptr.inl"
+
+1393351994 f:\backup\projects\demoframework\glm\\glm\gtc\quaternion.hpp
+	"../mat3x3.hpp"
+	"../mat4x4.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"quaternion.inl"
+
+1393351994 f:\backup\projects\demoframework\glm\\glm\gtc\constants.hpp
+	"../detail/setup.hpp"
+	"constants.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtc\constants.inl
+	<limits>
+
+1393351994 f:\backup\projects\demoframework\glm\\glm\gtc\quaternion.inl
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"../exponential.hpp"
+	<limits>
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtc\type_ptr.inl
+	<cstring>
+
+1441387942 source:f:\backup\projects\demoframework\colortest\src\primitives.cpp
+	"primitives.h"
+	<vector>
+	<math.h>
+
+1441387950 f:\backup\projects\demoframework\colortest\include\primitives.h
+	"gl_helpers.h"
+
+1493848823 source:f:\backup\projects\demoframework\colortest\common.cpp
+	"common.h"
+	"demo0.inl"
+
+1454013056 f:\backup\projects\demoframework\colortest\include\common.h
+	<stdlib.h>
+	<stdio.h>
+	"gl_helpers.h"
+	"primitives.h"
+
+1493909813 f:\backup\projects\demoframework\colortest\demo0.inl
+
+1493851455 source:f:\backup\projects\demoframework\colortest\main.cpp
+	<stdlib.h>
+	<stdio.h>
+	<fstream>
+	<iostream>
+	<sstream>
+	"gl_helpers.h"
+	<GL/glut.h>
+	<GL/freeglut.h>
+	"common.h"
+
+1368272960 f:\backup\projects\demoframework\freeglut\include\gl\glut.h
+	"freeglut_std.h"
+
+1368272960 f:\backup\projects\demoframework\freeglut\include\gl\freeglut_std.h
+	<windows.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1368272960 f:\backup\projects\demoframework\freeglut\include\gl\freeglut.h
+	"freeglut_std.h"
+	"freeglut_ext.h"
+
+1368272960 f:\backup\projects\demoframework\freeglut\include\gl\freeglut_ext.h
+	<stdarg.h>
+
+1496784484 source:f:\backup\projects\demoframework\subroutine\common.cpp
+	"common.h"
+	<glm/gtc/type_ptr.hpp>
+	"demo0.inl"
+	"demo1.inl"
+
+1497426006 f:\backup\projects\demoframework\subroutine\include\common.h
+	<stdlib.h>
+	<stdio.h>
+	"gl_helpers.h"
+	"primitives.h"
+
+1499022476 f:\backup\projects\demoframework\subroutine\include\gl_helpers.h
+	<map>
+	<vector>
+	<string>
+	<tr1/memory>
+	<GL/glew.h>
+	<GL/wglew.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtx/transform.hpp>
+	"glm/ext.hpp"
+	"glm/gtx/string_cast.hpp"
+
+1497186006 f:\backup\projects\demoframework\subroutine\include\primitives.h
+	"gl_helpers.h"
+
+1496784455 f:\backup\projects\demoframework\subroutine\demo0.inl
+
+1497571916 source:f:\backup\projects\demoframework\subroutine\main.cpp
+	<stdlib.h>
+	<stdio.h>
+	<fstream>
+	<iostream>
+	<sstream>
+	"gl_helpers.h"
+	<GL/glut.h>
+	<GL/freeglut.h>
+	"common.h"
+
+1499033739 source:f:\backup\projects\demoframework\subroutine\src\gl_helpers.cpp
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<iostream>
+	<fstream>
+	<sstream>
+	<vector>
+	<assert.h>
+	"gl_helpers.h"
+	<glm/gtc/type_ptr.hpp>
+	"../../inih/ini.h"
+
+1497551670 source:f:\backup\projects\demoframework\subroutine\src\primitives.cpp
+	"primitives.h"
+	<vector>
+	<math.h>
+	<fstream>
+
+1499034931 f:\backup\projects\demoframework\subroutine\demo1.inl
+	"ini.h"
+	"SubroutineShader.inc"
+
+1496202762 f:\backup\projects\demoframework\inih\ini.h
+	<stdio.h>
+
+1496202762 source:f:\backup\projects\demoframework\inih\ini.c
+	<stdio.h>
+	<ctype.h>
+	<string.h>
+	"ini.h"
+	<stdlib.h>
+
+1395789954 f:\backup\projects\demoframework\glm\\glm\ext.hpp
+	"./gtc/constants.hpp"
+	"./gtc/epsilon.hpp"
+	"./gtc/matrix_access.hpp"
+	"./gtc/matrix_integer.hpp"
+	"./gtc/matrix_inverse.hpp"
+	"./gtc/matrix_transform.hpp"
+	"./gtc/noise.hpp"
+	"./gtc/packing.hpp"
+	"./gtc/quaternion.hpp"
+	"./gtc/random.hpp"
+	"./gtc/reciprocal.hpp"
+	"./gtc/type_precision.hpp"
+	"./gtc/type_ptr.hpp"
+	"./gtc/ulp.hpp"
+	"./gtx/associated_min_max.hpp"
+	"./gtx/bit.hpp"
+	"./gtx/closest_point.hpp"
+	"./gtx/color_space.hpp"
+	"./gtx/color_space_YCoCg.hpp"
+	"./gtx/compatibility.hpp"
+	"./gtx/component_wise.hpp"
+	"./gtx/dual_quaternion.hpp"
+	"./gtx/euler_angles.hpp"
+	"./gtx/extend.hpp"
+	"./gtx/extented_min_max.hpp"
+	"./gtx/fast_exponential.hpp"
+	"./gtx/fast_square_root.hpp"
+	"./gtx/fast_trigonometry.hpp"
+	"./gtx/gradient_paint.hpp"
+	"./gtx/handed_coordinate_space.hpp"
+	"./gtx/inertia.hpp"
+	"./gtx/int_10_10_10_2.hpp"
+	"./gtx/integer.hpp"
+	"./gtx/intersect.hpp"
+	"./gtx/log_base.hpp"
+	"./gtx/matrix_cross_product.hpp"
+	"./gtx/matrix_interpolation.hpp"
+	"./gtx/matrix_major_storage.hpp"
+	"./gtx/matrix_operation.hpp"
+	"./gtx/matrix_query.hpp"
+	"./gtx/mixed_product.hpp"
+	"./gtx/multiple.hpp"
+	"./gtx/norm.hpp"
+	"./gtx/normal.hpp"
+	"./gtx/normalize_dot.hpp"
+	"./gtx/number_precision.hpp"
+	"./gtx/optimum_pow.hpp"
+	"./gtx/orthonormalize.hpp"
+	"./gtx/perpendicular.hpp"
+	"./gtx/polar_coordinates.hpp"
+	"./gtx/projection.hpp"
+	"./gtx/quaternion.hpp"
+	"./gtx/raw_data.hpp"
+	"./gtx/rotate_vector.hpp"
+	"./gtx/spline.hpp"
+	"./gtx/std_based_type.hpp"
+	"./gtx/string_cast.hpp"
+	"./gtx/transform.hpp"
+	"./gtx/transform2.hpp"
+	"./gtx/vec1.hpp"
+	"./gtx/vector_angle.hpp"
+	"./gtx/vector_query.hpp"
+	"./gtx/wrap.hpp"
+	"./gtx/simd_vec4.hpp"
+	"./gtx/simd_mat4.hpp"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtc\epsilon.hpp
+	"../detail/setup.hpp"
+	"../detail/precision.hpp"
+	"epsilon.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtc\epsilon.inl
+	"quaternion.hpp"
+	"../vector_relational.hpp"
+	"../common.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtc\matrix_access.hpp
+	"../detail/setup.hpp"
+	"matrix_access.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtc\matrix_access.inl
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtc\matrix_integer.hpp
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtc\matrix_inverse.hpp
+	"../detail/setup.hpp"
+	"matrix_inverse.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtc\matrix_inverse.inl
+	"../mat2x2.hpp"
+	"../mat3x3.hpp"
+	"../mat4x4.hpp"
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtc\noise.hpp
+	"../detail/setup.hpp"
+	"../detail/precision.hpp"
+	"noise.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtc\noise.inl
+	"../geometric.hpp"
+	"../common.hpp"
+	"../vector_relational.hpp"
+	"../detail/_noise.hpp"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\detail\_noise.hpp
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtc\packing.hpp
+	"type_precision.hpp"
+	"packing.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtc\type_precision.hpp
+	"../gtc/quaternion.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	"type_precision.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtc\type_precision.inl
+
+1393351994 f:\backup\projects\demoframework\glm\\glm\gtc\packing.inl
+	"../common.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../detail/type_half.hpp"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtc\random.hpp
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"random.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtc\random.inl
+	"../geometric.hpp"
+	"../exponential.hpp"
+	<cstdlib>
+	<ctime>
+	<cassert>
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtc\reciprocal.hpp
+	"../detail/setup.hpp"
+	"reciprocal.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtc\reciprocal.inl
+	"../trigonometric.hpp"
+	<limits>
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtc\ulp.hpp
+	"../detail/setup.hpp"
+	"../detail/precision.hpp"
+	"../detail/type_int.hpp"
+	"ulp.inl"
+
+1396389374 f:\backup\projects\demoframework\glm\\glm\gtc\ulp.inl
+	"../detail/type_int.hpp"
+	<cmath>
+	<cfloat>
+	<limits>
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtx\associated_min_max.hpp
+	"../glm.hpp"
+	"associated_min_max.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\associated_min_max.inl
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\bit.hpp
+	"../detail/type_int.hpp"
+	"../detail/setup.hpp"
+	<cstddef>
+	"bit.inl"
+
+1395789954 f:\backup\projects\demoframework\glm\\glm\gtx\bit.inl
+	"../detail/_vectorize.hpp"
+	<limits>
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtx\closest_point.hpp
+	"../glm.hpp"
+	"closest_point.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\closest_point.inl
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtx\color_space.hpp
+	"../glm.hpp"
+	"color_space.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\color_space.inl
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtx\color_space_ycocg.hpp
+	"../glm.hpp"
+	"color_space_YCoCg.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\color_space_ycocg.inl
+
+1394935148 f:\backup\projects\demoframework\glm\\glm\gtx\compatibility.hpp
+	"../glm.hpp"
+	"../gtc/quaternion.hpp"
+	<cfloat>
+	<cmath>
+	"compatibility.inl"
+
+1394935148 f:\backup\projects\demoframework\glm\\glm\gtx\compatibility.inl
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtx\component_wise.hpp
+	"../detail/setup.hpp"
+	"component_wise.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\component_wise.inl
+
+1394935148 f:\backup\projects\demoframework\glm\\glm\gtx\dual_quaternion.hpp
+	"../glm.hpp"
+	"../gtc/constants.hpp"
+	"../gtc/quaternion.hpp"
+	"dual_quaternion.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\dual_quaternion.inl
+	"../geometric.hpp"
+	<limits>
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtx\euler_angles.hpp
+	"../glm.hpp"
+	"euler_angles.inl"
+
+1396300992 f:\backup\projects\demoframework\glm\\glm\gtx\euler_angles.inl
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\extend.hpp
+	"../glm.hpp"
+	"extend.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\extend.inl
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtx\extented_min_max.hpp
+	"../glm.hpp"
+	"extented_min_max.inl"
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtx\extented_min_max.inl
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtx\fast_exponential.hpp
+	"../glm.hpp"
+	"fast_exponential.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\fast_exponential.inl
+
+1393351994 f:\backup\projects\demoframework\glm\\glm\gtx\fast_square_root.hpp
+	"../glm.hpp"
+	"fast_square_root.inl"
+
+1396307232 f:\backup\projects\demoframework\glm\\glm\gtx\fast_square_root.inl
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtx\fast_trigonometry.hpp
+	"../glm.hpp"
+	"fast_trigonometry.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\fast_trigonometry.inl
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtx\gradient_paint.hpp
+	"../glm.hpp"
+	"../gtx/optimum_pow.hpp"
+	"gradient_paint.inl"
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtx\optimum_pow.hpp
+	"../glm.hpp"
+	"optimum_pow.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\optimum_pow.inl
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtx\gradient_paint.inl
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtx\handed_coordinate_space.hpp
+	"../glm.hpp"
+	"handed_coordinate_space.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\handed_coordinate_space.inl
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\inertia.hpp
+	"../glm.hpp"
+	"inertia.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\inertia.inl
+
+1395789954 f:\backup\projects\demoframework\glm\\glm\gtx\int_10_10_10_2.hpp
+	"../glm.hpp"
+	"../gtx/raw_data.hpp"
+	"int_10_10_10_2.inl"
+
+1393351994 f:\backup\projects\demoframework\glm\\glm\gtx\raw_data.hpp
+	"../detail/setup.hpp"
+	"../detail/type_int.hpp"
+	"raw_data.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\raw_data.inl
+
+1395789954 f:\backup\projects\demoframework\glm\\glm\gtx\int_10_10_10_2.inl
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtx\integer.hpp
+	"../glm.hpp"
+	"integer.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\integer.inl
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtx\intersect.hpp
+	"../glm.hpp"
+	"../gtx/closest_point.hpp"
+	"intersect.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\intersect.inl
+	"../geometric.hpp"
+	<cfloat>
+	<limits>
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtx\log_base.hpp
+	"../glm.hpp"
+	"log_base.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\log_base.inl
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtx\matrix_cross_product.hpp
+	"../glm.hpp"
+	"matrix_cross_product.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\matrix_cross_product.inl
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtx\matrix_interpolation.hpp
+	"../glm.hpp"
+	"matrix_interpolation.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\matrix_interpolation.inl
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtx\matrix_major_storage.hpp
+	"../glm.hpp"
+	"matrix_major_storage.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\matrix_major_storage.inl
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtx\matrix_operation.hpp
+	"../glm.hpp"
+	"matrix_operation.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\matrix_operation.inl
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtx\matrix_query.hpp
+	"../glm.hpp"
+	"../gtx/vector_query.hpp"
+	<limits>
+	"matrix_query.inl"
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtx\vector_query.hpp
+	"../glm.hpp"
+	<cfloat>
+	<limits>
+	"vector_query.inl"
+
+1394935148 f:\backup\projects\demoframework\glm\\glm\gtx\vector_query.inl
+	<cassert>
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtx\matrix_query.inl
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtx\mixed_product.hpp
+	"../glm.hpp"
+	"mixed_product.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\mixed_product.inl
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtx\multiple.hpp
+	"../glm.hpp"
+	"multiple.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\multiple.inl
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtx\norm.hpp
+	"../glm.hpp"
+	"../gtx/quaternion.hpp"
+	"norm.inl"
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtx\quaternion.hpp
+	"../glm.hpp"
+	"../gtc/constants.hpp"
+	"../gtc/quaternion.hpp"
+	"../gtx/norm.hpp"
+	"quaternion.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\quaternion.inl
+	<limits>
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\norm.inl
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtx\normal.hpp
+	"../glm.hpp"
+	"normal.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\normal.inl
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtx\normalize_dot.hpp
+	"../glm.hpp"
+	"../gtx/fast_square_root.hpp"
+	"normalize_dot.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\normalize_dot.inl
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\number_precision.hpp
+	"../glm.hpp"
+	"../gtc/type_precision.hpp"
+	"number_precision.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\number_precision.inl
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtx\orthonormalize.hpp
+	"../glm.hpp"
+	"orthonormalize.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\orthonormalize.inl
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtx\perpendicular.hpp
+	"../glm.hpp"
+	"../gtx/projection.hpp"
+	"perpendicular.inl"
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtx\projection.hpp
+	"../glm.hpp"
+	"projection.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\projection.inl
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\perpendicular.inl
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtx\polar_coordinates.hpp
+	"../glm.hpp"
+	"polar_coordinates.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\polar_coordinates.inl
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtx\rotate_vector.hpp
+	"../glm.hpp"
+	"../gtx/transform.hpp"
+	"rotate_vector.inl"
+
+1395789954 f:\backup\projects\demoframework\glm\\glm\gtx\rotate_vector.inl
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\spline.hpp
+	"../glm.hpp"
+	"../gtx/optimum_pow.hpp"
+	"spline.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\spline.inl
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\std_based_type.hpp
+	"../glm.hpp"
+	<cstdlib>
+	"std_based_type.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\std_based_type.inl
+
+1394935148 f:\backup\projects\demoframework\glm\\glm\gtx\string_cast.hpp
+	"../glm.hpp"
+	"../gtx/integer.hpp"
+	"../gtx/quaternion.hpp"
+	<string>
+	"string_cast.inl"
+
+1394935148 f:\backup\projects\demoframework\glm\\glm\gtx\string_cast.inl
+	<cstdarg>
+	<cstdio>
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtx\transform2.hpp
+	"../glm.hpp"
+	"../gtx/transform.hpp"
+	"transform2.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\transform2.inl
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\vec1.hpp
+	"../glm.hpp"
+	"../detail/type_vec1.hpp"
+	"vec1.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\vec1.inl
+
+1394916348 f:\backup\projects\demoframework\glm\\glm\gtx\vector_angle.hpp
+	"../glm.hpp"
+	"../gtc/epsilon.hpp"
+	"../gtx/quaternion.hpp"
+	"../gtx/rotate_vector.hpp"
+	"vector_angle.inl"
+
+1395789954 f:\backup\projects\demoframework\glm\\glm\gtx\vector_angle.inl
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\wrap.hpp
+	"../glm.hpp"
+	"wrap.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\wrap.inl
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\simd_vec4.hpp
+	"../glm.hpp"
+	"../detail/intrinsic_common.hpp"
+	"../detail/intrinsic_geometric.hpp"
+	"../detail/intrinsic_integer.hpp"
+	"simd_vec4.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\detail\intrinsic_common.hpp
+	"setup.hpp"
+	"intrinsic_common.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\detail\intrinsic_common.inl
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\detail\intrinsic_geometric.hpp
+	"setup.hpp"
+	"intrinsic_common.hpp"
+	"intrinsic_geometric.inl"
+
+1395789954 f:\backup\projects\demoframework\glm\\glm\detail\intrinsic_geometric.inl
+
+1388012474 f:\backup\projects\demoframework\glm\\glm\detail\intrinsic_integer.hpp
+	"glm/glm.hpp"
+	"intrinsic_integer.inl"
+
+1388012474 f:\backup\projects\demoframework\glm\\glm\detail\intrinsic_integer.inl
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\simd_vec4.inl
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\simd_mat4.hpp
+	"../detail/setup.hpp"
+	"../detail/intrinsic_matrix.hpp"
+	"../gtx/simd_vec4.hpp"
+	"simd_mat4.inl"
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\detail\intrinsic_matrix.hpp
+	"setup.hpp"
+	"intrinsic_geometric.hpp"
+	"intrinsic_matrix.inl"
+
+1391891302 f:\backup\projects\demoframework\glm\\glm\detail\intrinsic_matrix.inl
+
+1389479880 f:\backup\projects\demoframework\glm\\glm\gtx\simd_mat4.inl
+
+1497541691 f:\backup\projects\demoframework\subroutine\subroutineshader.inc
+
+1496202762 source:f:\backup\projects\subroutines\inih\ini.c
+	<stdio.h>
+	<ctype.h>
+	<string.h>
+	"ini.h"
+	<stdlib.h>
+
+1496202762 f:\backup\projects\subroutines\inih\ini.h
+	<stdio.h>
+
+1496784484 source:f:\backup\projects\subroutines\subroutine\common.cpp
+	"common.h"
+	<glm/gtc/type_ptr.hpp>
+	"demo0.inl"
+	"demo1.inl"
+
+1497426006 f:\backup\projects\subroutines\subroutine\include\common.h
+	<stdlib.h>
+	<stdio.h>
+	"gl_helpers.h"
+	"primitives.h"
+
+1499022476 f:\backup\projects\subroutines\subroutine\include\gl_helpers.h
+	<map>
+	<vector>
+	<string>
+	<tr1/memory>
+	<GL/glew.h>
+	<GL/wglew.h>
+	<glm/glm.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<glm/gtx/transform.hpp>
+	"glm/ext.hpp"
+	"glm/gtx/string_cast.hpp"
+
+1374477200 f:\backup\projects\subroutines\glew-1.10.0\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1374477200 f:\backup\projects\subroutines\glew-1.10.0\include\gl\wglew.h
+	<windows.h>
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\glm.hpp
+	"detail/_fixes.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\detail\_fixes.hpp
+	<cmath>
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\fwd.hpp
+	"detail/type_int.hpp"
+	"detail/type_float.hpp"
+	"detail/type_vec.hpp"
+	"detail/type_mat.hpp"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\detail\type_int.hpp
+	"setup.hpp"
+	<cstdint>
+
+1396306860 f:\backup\projects\subroutines\glm\\glm\detail\setup.hpp
+	<cassert>
+	<cuda.h>
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<smmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\detail\type_vec.hpp
+	"precision.hpp"
+	"type_int.hpp"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\detail\precision.hpp
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\detail\type_mat.hpp
+	"precision.hpp"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\vec2.hpp
+	"detail/type_vec2.hpp"
+
+1395789954 f:\backup\projects\subroutines\glm\\glm\detail\type_vec2.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\detail\_swizzle.hpp
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\detail\_swizzle_func.hpp
+
+1393354078 f:\backup\projects\subroutines\glm\\glm\detail\type_vec2.inl
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\vec3.hpp
+	"detail/type_vec3.hpp"
+
+1395789954 f:\backup\projects\subroutines\glm\\glm\detail\type_vec3.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1393354078 f:\backup\projects\subroutines\glm\\glm\detail\type_vec3.inl
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\vec4.hpp
+	"detail/type_vec4.hpp"
+
+1395789954 f:\backup\projects\subroutines\glm\\glm\detail\type_vec4.hpp
+	"setup.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1395789954 f:\backup\projects\subroutines\glm\\glm\detail\type_vec4.inl
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\mat2x2.hpp
+	"detail/type_mat2x2.hpp"
+
+1395789954 f:\backup\projects\subroutines\glm\\glm\detail\type_mat2x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_mat.hpp"
+	<limits>
+	"type_mat2x2.inl"
+
+1395789954 f:\backup\projects\subroutines\glm\\glm\detail\type_mat2x2.inl
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\mat2x3.hpp
+	"detail/type_mat2x3.hpp"
+
+1395789954 f:\backup\projects\subroutines\glm\\glm\detail\type_mat2x3.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	"type_mat2x3.inl"
+
+1393351994 f:\backup\projects\subroutines\glm\\glm\detail\type_mat2x3.inl
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\mat2x4.hpp
+	"detail/type_mat2x4.hpp"
+
+1395789954 f:\backup\projects\subroutines\glm\\glm\detail\type_mat2x4.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	"type_mat2x4.inl"
+
+1393351994 f:\backup\projects\subroutines\glm\\glm\detail\type_mat2x4.inl
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\mat3x2.hpp
+	"detail/type_mat3x2.hpp"
+
+1395789954 f:\backup\projects\subroutines\glm\\glm\detail\type_mat3x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	"type_mat3x2.inl"
+
+1393351994 f:\backup\projects\subroutines\glm\\glm\detail\type_mat3x2.inl
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\mat3x3.hpp
+	"detail/type_mat3x3.hpp"
+
+1395789954 f:\backup\projects\subroutines\glm\\glm\detail\type_mat3x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	"type_mat3x3.inl"
+
+1395789954 f:\backup\projects\subroutines\glm\\glm\detail\type_mat3x3.inl
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\mat3x4.hpp
+	"detail/type_mat3x4.hpp"
+
+1395789954 f:\backup\projects\subroutines\glm\\glm\detail\type_mat3x4.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	"type_mat3x4.inl"
+
+1393351994 f:\backup\projects\subroutines\glm\\glm\detail\type_mat3x4.inl
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\mat4x2.hpp
+	"detail/type_mat4x2.hpp"
+
+1395789954 f:\backup\projects\subroutines\glm\\glm\detail\type_mat4x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	"type_mat4x2.inl"
+
+1393351994 f:\backup\projects\subroutines\glm\\glm\detail\type_mat4x2.inl
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\mat4x3.hpp
+	"detail/type_mat4x3.hpp"
+
+1395789954 f:\backup\projects\subroutines\glm\\glm\detail\type_mat4x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	"type_mat4x3.inl"
+
+1393351994 f:\backup\projects\subroutines\glm\\glm\detail\type_mat4x3.inl
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\mat4x4.hpp
+	"detail/type_mat4x4.hpp"
+
+1395789954 f:\backup\projects\subroutines\glm\\glm\detail\type_mat4x4.hpp
+	"../fwd.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1393351994 f:\backup\projects\subroutines\glm\\glm\detail\type_mat4x4.inl
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\trigonometric.hpp
+	"detail/func_trigonometric.hpp"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\detail\func_trigonometric.hpp
+	"func_trigonometric.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+
+1393351994 f:\backup\projects\subroutines\glm\\glm\detail\_vectorize.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+
+1395789954 f:\backup\projects\subroutines\glm\\glm\detail\type_vec1.hpp
+	"../fwd.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec1.inl"
+
+1393354078 f:\backup\projects\subroutines\glm\\glm\detail\type_vec1.inl
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\exponential.hpp
+	"detail/func_exponential.hpp"
+
+1393351994 f:\backup\projects\subroutines\glm\\glm\detail\func_exponential.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<cmath>
+	"func_exponential.inl"
+
+1396307706 f:\backup\projects\subroutines\glm\\glm\detail\func_exponential.inl
+	"func_vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cassert>
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\detail\func_vector_relational.hpp
+	"precision.hpp"
+	"setup.hpp"
+	"func_vector_relational.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\detail\func_vector_relational.inl
+	<limits>
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\common.hpp
+	"detail/func_common.hpp"
+
+1391891302 f:\backup\projects\subroutines\glm\\glm\detail\func_common.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"type_int.hpp"
+	"_fixes.hpp"
+	"func_common.inl"
+
+1393351994 f:\backup\projects\subroutines\glm\\glm\detail\func_common.inl
+	"func_vector_relational.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\packing.hpp
+	"detail/func_packing.hpp"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\detail\func_packing.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"func_packing.inl"
+
+1393351994 f:\backup\projects\subroutines\glm\\glm\detail\func_packing.inl
+	"func_common.hpp"
+	"type_half.hpp"
+	"../fwd.hpp"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\detail\type_half.inl
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\geometric.hpp
+	"detail/func_geometric.hpp"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\detail\func_geometric.hpp
+	"type_vec3.hpp"
+	"func_geometric.inl"
+
+1396307136 f:\backup\projects\subroutines\glm\\glm\detail\func_geometric.inl
+	"func_exponential.hpp"
+	"func_common.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_float.hpp"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\matrix.hpp
+	"detail/func_matrix.hpp"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\detail\func_matrix.hpp
+	"../detail/precision.hpp"
+	"../detail/setup.hpp"
+	"../detail/type_mat.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	"func_matrix.inl"
+
+1395789954 f:\backup\projects\subroutines\glm\\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\vector_relational.hpp
+	"detail/func_vector_relational.hpp"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\integer.hpp
+	"detail/func_integer.hpp"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\detail\func_integer.hpp
+	"setup.hpp"
+	"func_integer.inl"
+
+1395789954 f:\backup\projects\subroutines\glm\\glm\detail\func_integer.inl
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_int.hpp"
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtc\matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"matrix_transform.inl"
+
+1394935148 f:\backup\projects\subroutines\glm\\glm\gtc\matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtx\transform.hpp
+	"../glm.hpp"
+	"../gtc/matrix_transform.hpp"
+	"transform.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\transform.inl
+
+1395789954 f:\backup\projects\subroutines\glm\\glm\ext.hpp
+	"./gtc/constants.hpp"
+	"./gtc/epsilon.hpp"
+	"./gtc/matrix_access.hpp"
+	"./gtc/matrix_integer.hpp"
+	"./gtc/matrix_inverse.hpp"
+	"./gtc/matrix_transform.hpp"
+	"./gtc/noise.hpp"
+	"./gtc/packing.hpp"
+	"./gtc/quaternion.hpp"
+	"./gtc/random.hpp"
+	"./gtc/reciprocal.hpp"
+	"./gtc/type_precision.hpp"
+	"./gtc/type_ptr.hpp"
+	"./gtc/ulp.hpp"
+	"./gtx/associated_min_max.hpp"
+	"./gtx/bit.hpp"
+	"./gtx/closest_point.hpp"
+	"./gtx/color_space.hpp"
+	"./gtx/color_space_YCoCg.hpp"
+	"./gtx/compatibility.hpp"
+	"./gtx/component_wise.hpp"
+	"./gtx/dual_quaternion.hpp"
+	"./gtx/euler_angles.hpp"
+	"./gtx/extend.hpp"
+	"./gtx/extented_min_max.hpp"
+	"./gtx/fast_exponential.hpp"
+	"./gtx/fast_square_root.hpp"
+	"./gtx/fast_trigonometry.hpp"
+	"./gtx/gradient_paint.hpp"
+	"./gtx/handed_coordinate_space.hpp"
+	"./gtx/inertia.hpp"
+	"./gtx/int_10_10_10_2.hpp"
+	"./gtx/integer.hpp"
+	"./gtx/intersect.hpp"
+	"./gtx/log_base.hpp"
+	"./gtx/matrix_cross_product.hpp"
+	"./gtx/matrix_interpolation.hpp"
+	"./gtx/matrix_major_storage.hpp"
+	"./gtx/matrix_operation.hpp"
+	"./gtx/matrix_query.hpp"
+	"./gtx/mixed_product.hpp"
+	"./gtx/multiple.hpp"
+	"./gtx/norm.hpp"
+	"./gtx/normal.hpp"
+	"./gtx/normalize_dot.hpp"
+	"./gtx/number_precision.hpp"
+	"./gtx/optimum_pow.hpp"
+	"./gtx/orthonormalize.hpp"
+	"./gtx/perpendicular.hpp"
+	"./gtx/polar_coordinates.hpp"
+	"./gtx/projection.hpp"
+	"./gtx/quaternion.hpp"
+	"./gtx/raw_data.hpp"
+	"./gtx/rotate_vector.hpp"
+	"./gtx/spline.hpp"
+	"./gtx/std_based_type.hpp"
+	"./gtx/string_cast.hpp"
+	"./gtx/transform.hpp"
+	"./gtx/transform2.hpp"
+	"./gtx/vec1.hpp"
+	"./gtx/vector_angle.hpp"
+	"./gtx/vector_query.hpp"
+	"./gtx/wrap.hpp"
+	"./gtx/simd_vec4.hpp"
+	"./gtx/simd_mat4.hpp"
+
+1393351994 f:\backup\projects\subroutines\glm\\glm\gtc\constants.hpp
+	"../detail/setup.hpp"
+	"constants.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtc\constants.inl
+	<limits>
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtc\epsilon.hpp
+	"../detail/setup.hpp"
+	"../detail/precision.hpp"
+	"epsilon.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtc\epsilon.inl
+	"quaternion.hpp"
+	"../vector_relational.hpp"
+	"../common.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+
+1393351994 f:\backup\projects\subroutines\glm\\glm\gtc\quaternion.hpp
+	"../mat3x3.hpp"
+	"../mat4x4.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"quaternion.inl"
+
+1393351994 f:\backup\projects\subroutines\glm\\glm\gtc\quaternion.inl
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"../exponential.hpp"
+	<limits>
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtc\matrix_access.hpp
+	"../detail/setup.hpp"
+	"matrix_access.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtc\matrix_access.inl
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtc\matrix_integer.hpp
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtc\matrix_inverse.hpp
+	"../detail/setup.hpp"
+	"matrix_inverse.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtc\matrix_inverse.inl
+	"../mat2x2.hpp"
+	"../mat3x3.hpp"
+	"../mat4x4.hpp"
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtc\noise.hpp
+	"../detail/setup.hpp"
+	"../detail/precision.hpp"
+	"noise.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtc\noise.inl
+	"../geometric.hpp"
+	"../common.hpp"
+	"../vector_relational.hpp"
+	"../detail/_noise.hpp"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\detail\_noise.hpp
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtc\packing.hpp
+	"type_precision.hpp"
+	"packing.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtc\type_precision.hpp
+	"../gtc/quaternion.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	"type_precision.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtc\type_precision.inl
+
+1393351994 f:\backup\projects\subroutines\glm\\glm\gtc\packing.inl
+	"../common.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../detail/type_half.hpp"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtc\random.hpp
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"random.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtc\random.inl
+	"../geometric.hpp"
+	"../exponential.hpp"
+	<cstdlib>
+	<ctime>
+	<cassert>
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtc\reciprocal.hpp
+	"../detail/setup.hpp"
+	"reciprocal.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtc\reciprocal.inl
+	"../trigonometric.hpp"
+	<limits>
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtc\type_ptr.hpp
+	"../gtc/quaternion.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	<cstring>
+	"type_ptr.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtc\type_ptr.inl
+	<cstring>
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtc\ulp.hpp
+	"../detail/setup.hpp"
+	"../detail/precision.hpp"
+	"../detail/type_int.hpp"
+	"ulp.inl"
+
+1396389374 f:\backup\projects\subroutines\glm\\glm\gtc\ulp.inl
+	"../detail/type_int.hpp"
+	<cmath>
+	<cfloat>
+	<limits>
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtx\associated_min_max.hpp
+	"../glm.hpp"
+	"associated_min_max.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\associated_min_max.inl
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\bit.hpp
+	"../detail/type_int.hpp"
+	"../detail/setup.hpp"
+	<cstddef>
+	"bit.inl"
+
+1395789954 f:\backup\projects\subroutines\glm\\glm\gtx\bit.inl
+	"../detail/_vectorize.hpp"
+	<limits>
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtx\closest_point.hpp
+	"../glm.hpp"
+	"closest_point.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\closest_point.inl
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtx\color_space.hpp
+	"../glm.hpp"
+	"color_space.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\color_space.inl
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtx\color_space_ycocg.hpp
+	"../glm.hpp"
+	"color_space_YCoCg.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\color_space_ycocg.inl
+
+1394935148 f:\backup\projects\subroutines\glm\\glm\gtx\compatibility.hpp
+	"../glm.hpp"
+	"../gtc/quaternion.hpp"
+	<cfloat>
+	<cmath>
+	"compatibility.inl"
+
+1394935148 f:\backup\projects\subroutines\glm\\glm\gtx\compatibility.inl
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtx\component_wise.hpp
+	"../detail/setup.hpp"
+	"component_wise.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\component_wise.inl
+
+1394935148 f:\backup\projects\subroutines\glm\\glm\gtx\dual_quaternion.hpp
+	"../glm.hpp"
+	"../gtc/constants.hpp"
+	"../gtc/quaternion.hpp"
+	"dual_quaternion.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\dual_quaternion.inl
+	"../geometric.hpp"
+	<limits>
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtx\euler_angles.hpp
+	"../glm.hpp"
+	"euler_angles.inl"
+
+1396300992 f:\backup\projects\subroutines\glm\\glm\gtx\euler_angles.inl
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\extend.hpp
+	"../glm.hpp"
+	"extend.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\extend.inl
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtx\extented_min_max.hpp
+	"../glm.hpp"
+	"extented_min_max.inl"
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtx\extented_min_max.inl
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtx\fast_exponential.hpp
+	"../glm.hpp"
+	"fast_exponential.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\fast_exponential.inl
+
+1393351994 f:\backup\projects\subroutines\glm\\glm\gtx\fast_square_root.hpp
+	"../glm.hpp"
+	"fast_square_root.inl"
+
+1396307232 f:\backup\projects\subroutines\glm\\glm\gtx\fast_square_root.inl
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtx\fast_trigonometry.hpp
+	"../glm.hpp"
+	"fast_trigonometry.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\fast_trigonometry.inl
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtx\gradient_paint.hpp
+	"../glm.hpp"
+	"../gtx/optimum_pow.hpp"
+	"gradient_paint.inl"
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtx\optimum_pow.hpp
+	"../glm.hpp"
+	"optimum_pow.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\optimum_pow.inl
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtx\gradient_paint.inl
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtx\handed_coordinate_space.hpp
+	"../glm.hpp"
+	"handed_coordinate_space.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\handed_coordinate_space.inl
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\inertia.hpp
+	"../glm.hpp"
+	"inertia.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\inertia.inl
+
+1395789954 f:\backup\projects\subroutines\glm\\glm\gtx\int_10_10_10_2.hpp
+	"../glm.hpp"
+	"../gtx/raw_data.hpp"
+	"int_10_10_10_2.inl"
+
+1393351994 f:\backup\projects\subroutines\glm\\glm\gtx\raw_data.hpp
+	"../detail/setup.hpp"
+	"../detail/type_int.hpp"
+	"raw_data.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\raw_data.inl
+
+1395789954 f:\backup\projects\subroutines\glm\\glm\gtx\int_10_10_10_2.inl
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtx\integer.hpp
+	"../glm.hpp"
+	"integer.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\integer.inl
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtx\intersect.hpp
+	"../glm.hpp"
+	"../gtx/closest_point.hpp"
+	"intersect.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\intersect.inl
+	"../geometric.hpp"
+	<cfloat>
+	<limits>
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtx\log_base.hpp
+	"../glm.hpp"
+	"log_base.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\log_base.inl
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtx\matrix_cross_product.hpp
+	"../glm.hpp"
+	"matrix_cross_product.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\matrix_cross_product.inl
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtx\matrix_interpolation.hpp
+	"../glm.hpp"
+	"matrix_interpolation.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\matrix_interpolation.inl
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtx\matrix_major_storage.hpp
+	"../glm.hpp"
+	"matrix_major_storage.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\matrix_major_storage.inl
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtx\matrix_operation.hpp
+	"../glm.hpp"
+	"matrix_operation.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\matrix_operation.inl
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtx\matrix_query.hpp
+	"../glm.hpp"
+	"../gtx/vector_query.hpp"
+	<limits>
+	"matrix_query.inl"
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtx\vector_query.hpp
+	"../glm.hpp"
+	<cfloat>
+	<limits>
+	"vector_query.inl"
+
+1394935148 f:\backup\projects\subroutines\glm\\glm\gtx\vector_query.inl
+	<cassert>
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtx\matrix_query.inl
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtx\mixed_product.hpp
+	"../glm.hpp"
+	"mixed_product.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\mixed_product.inl
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtx\multiple.hpp
+	"../glm.hpp"
+	"multiple.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\multiple.inl
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtx\norm.hpp
+	"../glm.hpp"
+	"../gtx/quaternion.hpp"
+	"norm.inl"
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtx\quaternion.hpp
+	"../glm.hpp"
+	"../gtc/constants.hpp"
+	"../gtc/quaternion.hpp"
+	"../gtx/norm.hpp"
+	"quaternion.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\quaternion.inl
+	<limits>
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\norm.inl
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtx\normal.hpp
+	"../glm.hpp"
+	"normal.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\normal.inl
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtx\normalize_dot.hpp
+	"../glm.hpp"
+	"../gtx/fast_square_root.hpp"
+	"normalize_dot.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\normalize_dot.inl
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\number_precision.hpp
+	"../glm.hpp"
+	"../gtc/type_precision.hpp"
+	"number_precision.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\number_precision.inl
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtx\orthonormalize.hpp
+	"../glm.hpp"
+	"orthonormalize.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\orthonormalize.inl
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtx\perpendicular.hpp
+	"../glm.hpp"
+	"../gtx/projection.hpp"
+	"perpendicular.inl"
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtx\projection.hpp
+	"../glm.hpp"
+	"projection.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\projection.inl
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\perpendicular.inl
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtx\polar_coordinates.hpp
+	"../glm.hpp"
+	"polar_coordinates.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\polar_coordinates.inl
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtx\rotate_vector.hpp
+	"../glm.hpp"
+	"../gtx/transform.hpp"
+	"rotate_vector.inl"
+
+1395789954 f:\backup\projects\subroutines\glm\\glm\gtx\rotate_vector.inl
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\spline.hpp
+	"../glm.hpp"
+	"../gtx/optimum_pow.hpp"
+	"spline.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\spline.inl
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\std_based_type.hpp
+	"../glm.hpp"
+	<cstdlib>
+	"std_based_type.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\std_based_type.inl
+
+1394935148 f:\backup\projects\subroutines\glm\\glm\gtx\string_cast.hpp
+	"../glm.hpp"
+	"../gtx/integer.hpp"
+	"../gtx/quaternion.hpp"
+	<string>
+	"string_cast.inl"
+
+1394935148 f:\backup\projects\subroutines\glm\\glm\gtx\string_cast.inl
+	<cstdarg>
+	<cstdio>
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtx\transform2.hpp
+	"../glm.hpp"
+	"../gtx/transform.hpp"
+	"transform2.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\transform2.inl
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\vec1.hpp
+	"../glm.hpp"
+	"../detail/type_vec1.hpp"
+	"vec1.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\vec1.inl
+
+1394916348 f:\backup\projects\subroutines\glm\\glm\gtx\vector_angle.hpp
+	"../glm.hpp"
+	"../gtc/epsilon.hpp"
+	"../gtx/quaternion.hpp"
+	"../gtx/rotate_vector.hpp"
+	"vector_angle.inl"
+
+1395789954 f:\backup\projects\subroutines\glm\\glm\gtx\vector_angle.inl
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\wrap.hpp
+	"../glm.hpp"
+	"wrap.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\wrap.inl
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\simd_vec4.hpp
+	"../glm.hpp"
+	"../detail/intrinsic_common.hpp"
+	"../detail/intrinsic_geometric.hpp"
+	"../detail/intrinsic_integer.hpp"
+	"simd_vec4.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\detail\intrinsic_common.hpp
+	"setup.hpp"
+	"intrinsic_common.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\detail\intrinsic_common.inl
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\detail\intrinsic_geometric.hpp
+	"setup.hpp"
+	"intrinsic_common.hpp"
+	"intrinsic_geometric.inl"
+
+1395789954 f:\backup\projects\subroutines\glm\\glm\detail\intrinsic_geometric.inl
+
+1388012474 f:\backup\projects\subroutines\glm\\glm\detail\intrinsic_integer.hpp
+	"glm/glm.hpp"
+	"intrinsic_integer.inl"
+
+1388012474 f:\backup\projects\subroutines\glm\\glm\detail\intrinsic_integer.inl
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\simd_vec4.inl
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\simd_mat4.hpp
+	"../detail/setup.hpp"
+	"../detail/intrinsic_matrix.hpp"
+	"../gtx/simd_vec4.hpp"
+	"simd_mat4.inl"
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\detail\intrinsic_matrix.hpp
+	"setup.hpp"
+	"intrinsic_geometric.hpp"
+	"intrinsic_matrix.inl"
+
+1391891302 f:\backup\projects\subroutines\glm\\glm\detail\intrinsic_matrix.inl
+
+1389479880 f:\backup\projects\subroutines\glm\\glm\gtx\simd_mat4.inl
+
+1497186006 f:\backup\projects\subroutines\subroutine\include\primitives.h
+	"gl_helpers.h"
+
+1496784455 f:\backup\projects\subroutines\subroutine\demo0.inl
+
+1499082740 f:\backup\projects\subroutines\subroutine\demo1.inl
+	"ini.h"
+	"SubroutineShader.inc"
+
+1497541691 f:\backup\projects\subroutines\subroutine\subroutineshader.inc
+
+1497571916 source:f:\backup\projects\subroutines\subroutine\main.cpp
+	<stdlib.h>
+	<stdio.h>
+	<fstream>
+	<iostream>
+	<sstream>
+	"gl_helpers.h"
+	<GL/glut.h>
+	<GL/freeglut.h>
+	"common.h"
+
+1368272960 f:\backup\projects\subroutines\freeglut\include\gl\glut.h
+	"freeglut_std.h"
+
+1368272960 f:\backup\projects\subroutines\freeglut\include\gl\freeglut_std.h
+	<windows.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1368272960 f:\backup\projects\subroutines\freeglut\include\gl\freeglut.h
+	"freeglut_std.h"
+	"freeglut_ext.h"
+
+1368272960 f:\backup\projects\subroutines\freeglut\include\gl\freeglut_ext.h
+	<stdarg.h>
+
+1499033739 source:f:\backup\projects\subroutines\subroutine\src\gl_helpers.cpp
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<iostream>
+	<fstream>
+	<sstream>
+	<vector>
+	<assert.h>
+	"gl_helpers.h"
+	<glm/gtc/type_ptr.hpp>
+	"../../inih/ini.h"
+
+1497551670 source:f:\backup\projects\subroutines\subroutine\src\primitives.cpp
+	"primitives.h"
+	<vector>
+	<math.h>
+	<fstream>
+
