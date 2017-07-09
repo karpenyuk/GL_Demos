@@ -81,8 +81,6 @@ public:
 
 CommandBuffer *cmd;
 
-#include "SubroutineShader.inc"
-
 const char fObjShader[] = SHADER_SOURCE(
   in vec3 texCoord;
   in vec3 normal;
