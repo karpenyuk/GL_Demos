@@ -1,14 +1,5 @@
-///////////////////////////////////////////////////////////////////////////////////////////////////
-// OpenGL Mathematics Copyright (c) 2005 - 2014 G-Truc Creation (www.g-truc.net)
-///////////////////////////////////////////////////////////////////////////////////////////////////
-// Created : 2010-09-16
-// Updated : 2011-05-27
-// Licence : This source is under MIT licence
-// File    : test/gtc/type_ptr.cpp
-///////////////////////////////////////////////////////////////////////////////////////////////////
-
-#define GLM_FORCE_RADIANS
 #include <glm/gtc/type_ptr.hpp>
+#include <glm/gtc/vec1.hpp>
 
 int test_value_ptr_vec()
 {
@@ -247,10 +238,90 @@ int test_make_pointer_vec()
 	return Error;
 }
 
+int test_make_vec1()
+{
+	int Error = 0;
+
+	glm::ivec1 const v1 = glm::make_vec1(glm::ivec1(2));
+	Error += v1 == glm::ivec1(2) ? 0 : 1;
+
+	glm::ivec1 const v2 = glm::make_vec1(glm::ivec2(2));
+	Error += v2 == glm::ivec1(2) ? 0 : 1;
+
+	glm::ivec1 const v3 = glm::make_vec1(glm::ivec3(2));
+	Error += v3 == glm::ivec1(2) ? 0 : 1;
+
+	glm::ivec1 const v4 = glm::make_vec1(glm::ivec4(2));
+	Error += v3 == glm::ivec1(2) ? 0 : 1;
+
+	return Error;
+}
+
+int test_make_vec2()
+{
+	int Error = 0;
+
+	glm::ivec2 const v1 = glm::make_vec2(glm::ivec1(2));
+	Error += v1 == glm::ivec2(2, 0) ? 0 : 1;
+
+	glm::ivec2 const v2 = glm::make_vec2(glm::ivec2(2));
+	Error += v2 == glm::ivec2(2, 2) ? 0 : 1;
+
+	glm::ivec2 const v3 = glm::make_vec2(glm::ivec3(2));
+	Error += v3 == glm::ivec2(2, 2) ? 0 : 1;
+
+	glm::ivec2 const v4 = glm::make_vec2(glm::ivec4(2));
+	Error += v3 == glm::ivec2(2, 2) ? 0 : 1;
+
+	return Error;
+}
+
+int test_make_vec3()
+{
+	int Error = 0;
+
+	glm::ivec3 const v1 = glm::make_vec3(glm::ivec1(2));
+	Error += v1 == glm::ivec3(2, 0, 0) ? 0 : 1;
+
+	glm::ivec3 const v2 = glm::make_vec3(glm::ivec2(2));
+	Error += v2 == glm::ivec3(2, 2, 0) ? 0 : 1;
+
+	glm::ivec3 const v3 = glm::make_vec3(glm::ivec3(2));
+	Error += v3 == glm::ivec3(2, 2, 2) ? 0 : 1;
+
+	glm::ivec3 const v4 = glm::make_vec3(glm::ivec4(2));
+	Error += v3 == glm::ivec3(2, 2, 2) ? 0 : 1;
+
+	return Error;
+}
+
+int test_make_vec4()
+{
+	int Error = 0;
+
+	glm::ivec4 const v1 = glm::make_vec4(glm::ivec1(2));
+	Error += v1 == glm::ivec4(2, 0, 0, 1) ? 0 : 1;
+
+	glm::ivec4 const v2 = glm::make_vec4(glm::ivec2(2));
+	Error += v2 == glm::ivec4(2, 2, 0, 1) ? 0 : 1;
+
+	glm::ivec4 const v3 = glm::make_vec4(glm::ivec3(2));
+	Error += v3 == glm::ivec4(2, 2, 2, 1) ? 0 : 1;
+
+	glm::ivec4 const v4 = glm::make_vec4(glm::ivec4(2));
+	Error += v3 == glm::ivec4(2, 2, 2, 4) ? 0 : 1;
+
+	return Error;
+}
+
 int main()
 {
 	int Error = 0;
 
+	Error += test_make_vec1();
+	Error += test_make_vec2();
+	Error += test_make_vec3();
+	Error += test_make_vec4();
 	Error += test_make_pointer_vec();
 	Error += test_make_pointer_mat();
 	Error += test_value_ptr_vec();
