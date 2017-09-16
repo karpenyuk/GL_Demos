@@ -106,9 +106,14 @@ void keyboard(unsigned char key, int x, int y)
       printf("FrameTime=%4.2fms, FPS=%4.2f",FrameTime/1000.0 / double(FrameCount), double(FrameCount)/FrameTime*1000000.0);
       exit(EXIT_SUCCESS);
       break;
-    case ' ': printf("OpenGL: %s\n", glGetString(GL_VERSION));
+    case ' ':
+      printf("OpenGL: %s\n", glGetString(GL_VERSION));
+      printf("FrameTime=%4.2fms, FPS=%4.2f\n",FrameTime/1000.0 / double(FrameCount), double(FrameCount)/FrameTime*1000000.0);
+      FrameTime = 0.0;
+      FrameCount = 0u;
       break;
   }
+  demo::keyboard(key, x,y);
 }
 
 void display()

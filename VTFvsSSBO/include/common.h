@@ -12,7 +12,8 @@
 #define STRINGIF_(EXPR) #EXPR
 #define STRINGIFY(EXPR) STRINGIF_(EXPR)
 
-#define SHADER_SOURCE(SOURCE) "#version 440\n #extension GL_ARB_shader_draw_parameters : enable\n\
+#define SHADER_SOURCE(SOURCE) "#version 440\n\
+    #extension GL_ARB_shader_draw_parameters : enable\n\
     #extension GL_ARB_bindless_texture : require\n\
     #extension GL_ARB_shading_language_packing : require\n\
     " STRINGIFY(SOURCE)
@@ -37,6 +38,7 @@ namespace demo {
   void update(int value);
   void reshape(int w,int h);
   void release(void);
+  void keyboard(unsigned char key, int x, int y);
   double PerfTest(uint32_t inst_count);
 
 } //namespace demo
