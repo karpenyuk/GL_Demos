@@ -1,13 +1,3 @@
-///////////////////////////////////////////////////////////////////////////////////////////////////
-// OpenGL Mathematics Copyright (c) 2005 - 2014 G-Truc Creation (www.g-truc.net)
-///////////////////////////////////////////////////////////////////////////////////////////////////
-// Created : 2012-09-19
-// Updated : 2012-09-19
-// Licence : This source is under MIT licence
-// File    : test/gtc/epsilon.cpp
-///////////////////////////////////////////////////////////////////////////////////////////////////
-
-#define GLM_FORCE_RADIANS
 #include <glm/gtc/epsilon.hpp>
 #include <glm/gtc/constants.hpp>
 #include <glm/vector_relational.hpp>
@@ -35,7 +25,7 @@ int test_defined()
 	return 0;
 }
 
-template <typename T>
+template<typename T>
 int test_equal()
 {
 	int Error(0);

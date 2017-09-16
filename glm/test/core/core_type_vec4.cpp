@@ -1,13 +1,6 @@
-///////////////////////////////////////////////////////////////////////////////////////////////////
-// OpenGL Mathematics Copyright (c) 2005 - 2014 G-Truc Creation (www.g-truc.net)
-///////////////////////////////////////////////////////////////////////////////////////////////////
-// Created : 2008-08-31
-// Updated : 2013-12-24
-// Licence : This source is under MIT License
-// File    : test/core/type_vec4.cpp
-///////////////////////////////////////////////////////////////////////////////////////////////////
-
-#define GLM_FORCE_RADIANS
+#define GLM_FORCE_ALIGNED
+#define GLM_FORCE_SWIZZLE
+#include <glm/gtc/epsilon.hpp>
 #include <glm/vector_relational.hpp>
 #include <glm/vec2.hpp>
 #include <glm/vec3.hpp>
@@ -15,6 +8,10 @@
 #include <cstdio>
 #include <ctime>
 #include <vector>
+
+static glm::vec4 g1;
+static glm::vec4 g2(1);
+static glm::vec4 g3(1, 1, 1, 1);
 
 template <int Value>
 struct mask
@@ -31,18 +28,34 @@ enum comp
 };
 
 //template<comp X, comp Y, comp Z, comp W>
-//__m128 swizzle(glm::vec4 const & v)
+//__m128 swizzle(glm::vec4 const& v)
 //{
 //	__m128 Src = _mm_set_ps(v.w, v.z, v.y, v.x);
 //	return _mm_shuffle_ps(Src, Src, mask<(int(W) << 6) | (int(Z) << 4) | (int(Y) << 2) | (int(X) << 0)>::value);
 //}
 
-
-int test_vec4_ctor()
+static int test_vec4_ctor()
 {
 	int Error = 0;
-	
-#if(GLM_HAS_INITIALIZER_LISTS)
+
+	{
+		glm::ivec4 A(1, 2, 3, 4);
+		glm::ivec4 B(A);
+		Error += glm::all(glm::equal(A, B)) ? 0 : 1;
+	}
+
+#	if GLM_HAS_TRIVIAL_QUERIES
+	//	Error += std::is_trivially_default_constructible<glm::vec4>::value ? 0 : 1;
+	//	Error += std::is_trivially_copy_assignable<glm::vec4>::value ? 0 : 1;
+		Error += std::is_trivially_copyable<glm::vec4>::value ? 0 : 1;
+		Error += std::is_trivially_copyable<glm::dvec4>::value ? 0 : 1;
+		Error += std::is_trivially_copyable<glm::ivec4>::value ? 0 : 1;
+		Error += std::is_trivially_copyable<glm::uvec4>::value ? 0 : 1;
+
+		Error += std::is_copy_constructible<glm::vec4>::value ? 0 : 1;
+#	endif
+
+#if GLM_HAS_INITIALIZER_LISTS
 	{
 		glm::vec4 a{ 0, 1, 2, 3 };
 		std::vector<glm::vec4> v = {
@@ -59,6 +72,48 @@ int test_vec4_ctor()
 			{8, 9, 0, 1}};
 	}
 #endif
+
+#if GLM_HAS_UNRESTRICTED_UNIONS && defined(GLM_FORCE_SWIZZLE)
+	{
+		glm::vec4 A = glm::vec4(1.0f, 2.0f, 3.0f, 4.0f);
+		glm::vec4 B = A.xyzw;
+		glm::vec4 C(A.xyzw);
+		glm::vec4 D(A.xyzw());
+		glm::vec4 E(A.x, A.yzw);
+		glm::vec4 F(A.x, A.yzw());
+		glm::vec4 G(A.xyz, A.w);
+		glm::vec4 H(A.xyz(), A.w);
+		glm::vec4 I(A.xy, A.zw);
+		glm::vec4 J(A.xy(), A.zw());
+		glm::vec4 K(A.x, A.y, A.zw);
+		glm::vec4 L(A.x, A.yz, A.w);
+		glm::vec4 M(A.xy, A.z, A.w);
+
+		Error += glm::all(glm::equal(A, B)) ? 0 : 1;
+		Error += glm::all(glm::equal(A, C)) ? 0 : 1;
+		Error += glm::all(glm::equal(A, D)) ? 0 : 1;
+		Error += glm::all(glm::equal(A, E)) ? 0 : 1;
+		Error += glm::all(glm::equal(A, F)) ? 0 : 1;
+		Error += glm::all(glm::equal(A, G)) ? 0 : 1;
+		Error += glm::all(glm::equal(A, H)) ? 0 : 1;
+		Error += glm::all(glm::equal(A, I)) ? 0 : 1;
+		Error += glm::all(glm::equal(A, J)) ? 0 : 1;
+		Error += glm::all(glm::equal(A, K)) ? 0 : 1;
+		Error += glm::all(glm::equal(A, L)) ? 0 : 1;
+		Error += glm::all(glm::equal(A, M)) ? 0 : 1;
+	}
+#endif// GLM_HAS_UNRESTRICTED_UNIONS && defined(GLM_FORCE_SWIZZLE)
+
+#	if GLM_HAS_CONSTEXPR && GLM_ARCH == GLM_ARCH_PURE && !(GLM_COMPILER & GLM_COMPILER_VC) // Visual Studio bug?
+	{
+		constexpr glm::ivec4 v(1);
+
+		Error += v.x == 1 ? 0 : 1;
+		Error += v.y == 1 ? 0 : 1;
+		Error += v.z == 1 ? 0 : 1;
+		Error += v.w == 1 ? 0 : 1;
+	}
+#	endif
 
 	{
 		glm::vec4 A(1);
@@ -85,7 +140,30 @@ int test_vec4_ctor()
 	return Error;
 }
 
-int test_vec4_operators()
+static int test_bvec4_ctor()
+{
+	int Error = 0;
+
+	glm::bvec4 const A(true);
+	glm::bvec4 const B(true);
+	glm::bvec4 const C(false);
+	glm::bvec4 const D = A && B;
+	glm::bvec4 const E = A && C;
+	glm::bvec4 const F = A || C;
+
+	Error += D == glm::bvec4(true) ? 0 : 1;
+	Error += E == glm::bvec4(false) ? 0 : 1;
+	Error += F == glm::bvec4(true) ? 0 : 1;
+
+	bool const G = A == C;
+	bool const H = A != C;
+	Error += !G ? 0 : 1;
+	Error += H ? 0 : 1;
+
+	return Error;
+}
+
+static int test_vec4_operators()
 {
 	int Error = 0;
 	
@@ -221,10 +299,31 @@ int test_vec4_operators()
 	return Error;
 }
 
-int test_vec4_size()
+static int test_vec4_equal()
 {
 	int Error = 0;
-	
+
+	{
+		glm::vec4 const A(1, 2, 3, 4);
+		glm::vec4 const B(1, 2, 3, 4);
+		Error += A == B ? 0 : 1;
+		Error += A != B ? 1 : 0;
+	}
+
+	{
+		glm::ivec4 const A(1, 2, 3, 4);
+		glm::ivec4 const B(1, 2, 3, 4);
+		Error += A == B ? 0 : 1;
+		Error += A != B ? 1 : 0;
+	}
+
+	return Error;
+}
+
+static int test_vec4_size()
+{
+	int Error = 0;
+
 	Error += sizeof(glm::vec4) == sizeof(glm::lowp_vec4) ? 0 : 1;
 	Error += sizeof(glm::vec4) == sizeof(glm::mediump_vec4) ? 0 : 1;
 	Error += sizeof(glm::vec4) == sizeof(glm::highp_vec4) ? 0 : 1;
@@ -235,17 +334,24 @@ int test_vec4_size()
 	Error += 32 == sizeof(glm::highp_dvec4) ? 0 : 1;
 	Error += glm::vec4().length() == 4 ? 0 : 1;
 	Error += glm::dvec4().length() == 4 ? 0 : 1;
-	
+	Error += glm::vec4::length() == 4 ? 0 : 1;
+	Error += glm::dvec4::length() == 4 ? 0 : 1;
+
+#	if GLM_HAS_CONSTEXPR_PARTIAL
+	constexpr std::size_t Length = glm::vec4::length();
+	Error += Length == 4 ? 0 : 1;
+#	endif
+
 	return Error;
 }
 
-int test_vec4_swizzle_partial()
+static int test_vec4_swizzle_partial()
 {
 	int Error = 0;
 
 	glm::vec4 A(1, 2, 3, 4);
 
-#	if(GLM_HAS_ANONYMOUS_UNION && defined(GLM_SWIZZLE_RELAX))
+#	if GLM_HAS_UNRESTRICTED_UNIONS && defined(GLM_SWIZZLE_RELAX)
 	{
 		glm::vec4 B(A.xy, A.zw);
 		Error += A == B ? 0 : 1;
@@ -276,7 +382,7 @@ int test_vec4_swizzle_partial()
 	return Error;
 }
 
-int test_operator_increment()
+static int test_operator_increment()
 {
 	int Error(0);
 
@@ -311,7 +417,7 @@ struct AoS
 	glm::vec2 D;
 };
 
-int test_vec4_perf_AoS(std::size_t Size)
+static int test_vec4_perf_AoS(std::size_t Size)
 {
 	int Error(0);
 
@@ -327,12 +433,12 @@ int test_vec4_perf_AoS(std::size_t Size)
 
 	std::clock_t EndTime = std::clock();
 
-  std::printf("AoS: %d\n", EndTime - StartTime);
+	std::printf("AoS: %ld\n", EndTime - StartTime);
 
 	return Error;
 }
 
-int test_vec4_perf_SoA(std::size_t Size)
+static int test_vec4_perf_SoA(std::size_t Size)
 {
 	int Error(0);
 
@@ -366,24 +472,143 @@ int test_vec4_perf_SoA(std::size_t Size)
 
 	std::clock_t EndTime = std::clock();
 
-	std::printf("SoA: %d\n", EndTime - StartTime);
+	std::printf("SoA: %ld\n", EndTime - StartTime);
+
+	return Error;
+}
+
+namespace heap
+{
+	struct A
+	{
+		float f;
+	};
+
+	struct B : public A
+	{
+		float g;
+		glm::vec4 v;
+	};
+
+	static int test()
+	{
+		int Error = 0;
+
+		A* p = new B;
+		p->f = 0.0f;
+		delete p;
+
+		Error += sizeof(B) == sizeof(glm::vec4) + sizeof(float) * 2 ? 0 : 1;
+
+		return Error;
+	}
+}//namespace heap
+
+static int test_vec4_simd()
+{
+	int Error = 0;
+
+	glm::vec4 const a(std::clock(), std::clock(), std::clock(), std::clock());
+	glm::vec4 const b(std::clock(), std::clock(), std::clock(), std::clock());
+
+	glm::vec4 const c(b * a);
+	glm::vec4 const d(a + c);
+
+	Error += glm::all(glm::greaterThanEqual(d, glm::vec4(0))) ? 0 : 1;
+
+	return Error;
+}
+
+static int test_inheritance()
+{
+	struct my_vec4 : public glm::vec4
+	{
+		my_vec4()
+			: glm::vec4(76.f, 75.f, 74.f, 73.f)
+			, data(82)
+		{}
+
+		int data;
+	};
+
+	int Error = 0;
+
+	my_vec4 v;
+
+	Error += v.data == 82 ? 0 : 1;
+	Error += glm::epsilonEqual(v.x, 76.f, glm::epsilon<float>()) ? 0 : 1;
+	Error += glm::epsilonEqual(v.y, 75.f, glm::epsilon<float>()) ? 0 : 1;
+	Error += glm::epsilonEqual(v.z, 74.f, glm::epsilon<float>()) ? 0 : 1;
+	Error += glm::epsilonEqual(v.w, 73.f, glm::epsilon<float>()) ? 0 : 1;
 
 	return Error;
 }
 
 int main()
 {
-	int Error(0);
+	int Error = 0;
 
+/*
+	{
+		glm::ivec4 const a1(2);
+		glm::ivec4 const b1 = a1 >> 1;
+
+		__m128i const e1 = _mm_set1_epi32(2);
+		__m128i const f1 = _mm_srli_epi32(e1, 1);
+
+		glm::ivec4 const g1 = *reinterpret_cast<glm::ivec4 const* const>(&f1);
+
+		glm::ivec4 const a2(-2);
+		glm::ivec4 const b2 = a2 >> 1;
+
+		__m128i const e2 = _mm_set1_epi32(-1);
+		__m128i const f2 = _mm_srli_epi32(e2, 1);
+
+		glm::ivec4 const g2 = *reinterpret_cast<glm::ivec4 const* const>(&f2);
+
+		printf("GNI\n");
+	}
+
+	{
+		glm::uvec4 const a1(2);
+		glm::uvec4 const b1 = a1 >> 1u;
+
+		__m128i const e1 = _mm_set1_epi32(2);
+		__m128i const f1 = _mm_srli_epi32(e1, 1);
+
+		glm::uvec4 const g1 = *reinterpret_cast<glm::uvec4 const* const>(&f1);
+
+		glm::uvec4 const a2(-1);
+		glm::uvec4 const b2 = a2 >> 1u;
+
+		__m128i const e2 = _mm_set1_epi32(-1);
+		__m128i const f2 = _mm_srli_epi32(e2, 1);
+
+		glm::uvec4 const g2 = *reinterpret_cast<glm::uvec4 const* const>(&f2);
+
+		printf("GNI\n");
+	}
+*/
+
+#	ifdef NDEBUG
 	std::size_t const Size(1000000);
+#	else
+	std::size_t const Size(1);
+#	endif//NDEBUG
 
 	Error += test_vec4_perf_AoS(Size);
 	Error += test_vec4_perf_SoA(Size);
+
 	Error += test_vec4_ctor();
+	Error += test_bvec4_ctor();
 	Error += test_vec4_size();
 	Error += test_vec4_operators();
+	Error += test_vec4_equal();
 	Error += test_vec4_swizzle_partial();
+	Error += test_vec4_simd();
 	Error += test_operator_increment();
+	Error += heap::test();
+	Error += test_inheritance();
 
 	return Error;
 }

@@ -1,18 +1,10 @@
-///////////////////////////////////////////////////////////////////////////////////////////////////
-// OpenGL Mathematics Copyright (c) 2005 - 2014 G-Truc Creation (www.g-truc.net)
-///////////////////////////////////////////////////////////////////////////////////////////////////
-// Created : 2011-05-25
-// Updated : 2011-05-31
-// Licence : This source is under MIT licence
-// File    : test/gtx/quaternion.cpp
-///////////////////////////////////////////////////////////////////////////////////////////////////
-
-#define GLM_FORCE_RADIANS
+#define GLM_ENABLE_EXPERIMENTAL
 #include <glm/gtc/epsilon.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtx/transform.hpp>
 #include <glm/gtx/quaternion.hpp>
+#include <glm/gtx/compatibility.hpp>
 #include <glm/ext.hpp>
 
 int test_quat_fastMix()
@@ -51,21 +43,24 @@ int test_quat_shortMix()
 
 int test_orientation()
 {
-	int Error(0);
+	int Error = 0;
 
 	{
 		glm::quat q(1.0f, 0.0f, 0.0f, 1.0f);
 		float p = glm::roll(q);
+		Error += glm::epsilonEqual(p, glm::pi<float>() * 0.5f, 0.0001f) ? 0 : 1;
 	}
 
 	{
 		glm::quat q(1.0f, 0.0f, 0.0f, 1.0f);
 		float p = glm::pitch(q);
+		Error += glm::epsilonEqual(p, 0.f, 0.0001f) ? 0 : 1;
 	}
 
 	{
 		glm::quat q(1.0f, 0.0f, 0.0f, 1.0f);
 		float p = glm::yaw(q);
+		Error += glm::epsilonEqual(p, 0.f, 0.0001f) ? 0 : 1;
 	}
 
 	return Error;
@@ -87,13 +82,44 @@ int test_rotation()
 	return Error;
 }
 
-int main()
+int test_log()
+{
+	int Error(0);
+	
+	glm::quat q;
+	glm::quat p = glm::log(q);
+	glm::quat r = glm::exp(p);
+
+	return Error;
+}
+
+int test_quat_lookAt()
 {
 	int Error(0);
 
+	glm::vec3 eye(0.0f);
+	glm::vec3 center(1.1f, -2.0f, 3.1416f);
+	glm::vec3 up = glm::vec3(-0.17f, 7.23f, -1.744f);
+
+	glm::quat test_quat = glm::quatLookAt(center - eye, up);
+	glm::quat test_mat = glm::conjugate(glm::quat_cast(glm::lookAt(eye, center, up)));
+
+	Error += static_cast<int>(glm::abs(glm::length(test_quat) - 1.0f) > glm::epsilon<float>());
+	Error += static_cast<int>(glm::min(glm::length(test_quat + (-test_mat)), glm::length(test_quat + test_mat)) > glm::epsilon<float>());
+
+	return Error;
+}
+
+int main()
+{
+	int Error = 0;
+
+	Error += test_log();
 	Error += test_rotation();
+	Error += test_orientation();
 	Error += test_quat_fastMix();
 	Error += test_quat_shortMix();
+	Error += test_quat_lookAt();
 
 	return Error;
 }
