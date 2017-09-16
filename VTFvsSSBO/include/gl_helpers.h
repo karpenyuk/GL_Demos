@@ -13,11 +13,12 @@
 //GLM Headers
 #define GLM_FORCE_RADIANS
 #define GLM_GTX_transform
-#define GLM_SWIZZLE
+#define GLM_ENABLE_EXPERIMENTAL
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtx/transform.hpp>
 #include "glm/ext.hpp"
+#include "glm/gtc/round.hpp"
 #include "glm/gtx/string_cast.hpp"
 
 # define GL_CHECK()\
@@ -46,6 +47,8 @@ struct Texture2D {
     GLuint Id;
     int width, height;
     void *data;
+    std::size_t dataSize;
+    std::size_t texelSize;
     GLuint internalFormat;
     GLuint format;
     GLenum type;
@@ -222,6 +225,82 @@ public:
 
   SSBOPtr() : base_class() {}
   SSBOPtr(element_type* rawPtr) : base_class(rawPtr) {}
+};
+
+template <typename T > class TBO {
+  private:
+    uint32_t arrayLength;
+    T *data;
+    GLuint buffId;
+    GLuint buffType;
+    GLuint texId;
+    GLint TextureBufferOffsetAlignment;
+    uint32_t elements_count;
+    uint32_t element_size;
+    uint32_t data_size;
+
+
+  public:
+    TBO(uint32_t elementsCount, uint32_t elementSize, GLuint textureFormat, T *source_data) {
+        data = source_data;
+        elements_count = elementsCount;
+        element_size = elementSize;
+        data_size = elementsCount * elementSize;
+        printf("elements_count = %d, element_size = %d, data_size = %d\n", elements_count, element_size, data_size);
+        glGetIntegerv(GL_TEXTURE_BUFFER_OFFSET_ALIGNMENT, &TextureBufferOffsetAlignment);
+        int MultipledSize = glm::ceilMultiple(int(data_size), int(TextureBufferOffsetAlignment));
+        printf("TextureBufferOffsetAlignment = %d, MultipledSize = %d\n", TextureBufferOffsetAlignment, MultipledSize);
+
+
+		glGenBuffers(1, &buffId);
+		buffType = GL_TEXTURE_BUFFER;
+
+		glBindBuffer(buffType, buffId);
+		glBufferData(buffType, TextureBufferOffsetAlignment + MultipledSize, 0, GL_STATIC_DRAW);
+		glBufferSubData(buffType, TextureBufferOffsetAlignment, data_size, data);
+
+		glBindBuffer(GL_TEXTURE_BUFFER, 0);
+
+		printf("TBO initialized: Id=%d, Ptr=%p\n", buffId, data);
+
+		glGenTextures(1, &texId);
+		glBindTexture(GL_TEXTURE_BUFFER, texId);
+		glTexBufferRange(GL_TEXTURE_BUFFER, textureFormat, buffId, TextureBufferOffsetAlignment, data_size);
+		glBindTexture(GL_TEXTURE_BUFFER, 0);
+
+    }
+    ~TBO() {
+      glBindBuffer(buffType, buffId);
+      glUnmapBuffer(buffType);
+      glDeleteBuffers(1, &buffId);
+      glBindTexture(GL_TEXTURE_BUFFER, 0);
+      glDeleteTextures(1, &texId);
+    }
+
+    T* getData() { return data; }
+    GLuint getBuffId() { return buffId; }
+    GLuint getTexId() { return texId; }
+    uint32_t getCount() { return elements_count; }
+    uint32_t getBuffSize() { return data_size; }
+
+    void Bind(GLenum texureUnit) {
+        glActiveTexture(GL_TEXTURE0+texureUnit);
+		glBindTexture(GL_TEXTURE_BUFFER,texId);
+    }
+    void UnBind(GLenum texureUnit ) {
+        glActiveTexture(GL_TEXTURE0+texureUnit);
+		glBindTexture(GL_TEXTURE_BUFFER, 0);
+    }
+};
+
+template<typename T>
+class TBOPtr : public std::tr1::shared_ptr<TBO<T> > {
+public:
+  typedef          std::tr1::shared_ptr<TBO<T> >   base_class;
+  typedef typename base_class::element_type        element_type;
+
+  TBOPtr() : base_class() {}
+  TBOPtr(element_type* rawPtr) : base_class(rawPtr) {}
 };
 
 class MatLibrary : public std::map<std::string, Material*> {

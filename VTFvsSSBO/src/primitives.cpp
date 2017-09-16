@@ -198,4 +198,64 @@ namespace Primitives {
     return sphere;
   }
 
+
+MeshPtr CreatePlane(float width, float height, int TilesX, int TilesY, bool AsLine) {
+  std::vector<glm::vec3> Vertices;
+  std::vector<glm::vec3> Normals;
+  std::vector<glm::vec2> TexCoords;
+  std::vector<GLuint> Indices;
+  Indices.clear();
+  Vertices.clear();
+  Normals.clear();
+  TexCoords.clear();
+
+  int offs;
+  glm::vec3 v;
+
+  float kx = (width)/float(TilesX);
+  float ky = (height)/float(TilesY);
+  float H = 0;
+
+  int LW = TilesX + 1;
+  for (int i = 0; i <= TilesY; ++i) {
+    int oy = i;
+    for (int j = 0; j <= TilesX; ++j) {
+      Vertices.push_back(glm::vec3(j*kx-width/2.0f, float(H), i*ky-height/2.0f));
+      float x = j*kx / (width);
+      float y = 1.0f - i*ky / height;
+      TexCoords.push_back(glm::vec2(x,y));
+      if (i < TilesY) {
+        int ox = j; offs = oy * LW + ox;
+        Indices.push_back(offs);
+        Indices.push_back(offs + LW);
+      }
+    }
+    int j = Indices[Indices.size() - 1];
+    offs = (oy + 1) * LW;
+    Indices.push_back(j); Indices.push_back(offs);
+  }
+
+  if (AsLine) {
+   Indices[Indices.size()-1] = 0;
+   for (int i = 0; i < LW - 1; ++i) Indices.push_back(i);
+  } else Indices.resize(Indices.size()-4);
+
+  Normals.resize(Vertices.size());
+  for (int i = 0; i<Normals.size(); ++i) Normals[i] = glm::vec3(0.0f, 1.0f, 0.0f);
+
+  GLenum ft = GL_TRIANGLE_STRIP;
+  if (AsLine) ft = GL_LINE_STRIP;
+
+    MeshPtr mesh = MeshPtr(new Mesh(ft, Indices.size()));
+
+    mesh->vId = gl_helpers::createBufferObject(GL_ARRAY_BUFFER, sizeof(glm::vec3)*Vertices.size(), Vertices.data());
+    mesh->nId = gl_helpers::createBufferObject(GL_ARRAY_BUFFER, sizeof(glm::vec3)*Normals.size(), Normals.data());
+    mesh->tId = gl_helpers::createBufferObject(GL_ARRAY_BUFFER, sizeof(glm::vec2)*TexCoords.size(), TexCoords.data());
+    mesh->iId = gl_helpers::createBufferObject(GL_ELEMENT_ARRAY_BUFFER, sizeof(GLuint)*Indices.size(), Indices.data());
+
+    return mesh;
+
+}
+
+
 } //namespace Primitives

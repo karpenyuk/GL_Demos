@@ -199,9 +199,10 @@ Texture2DPtr gl_helpers::loadTGA(std::string const & aFilename) {
       IdentificationField[IdentificationFieldSize] = '\0';
       delete[] IdentificationField;
 
-      std::size_t DataSize = Width * Height * (TexelSize >> 3);
-      tex2d->data = new char [DataSize];
-      FileIn.read((char*)tex2d->data, std::streamsize(DataSize));
+      tex2d->dataSize = Width * Height * (TexelSize >> 3);
+      tex2d->texelSize = TexelSize;
+      tex2d->data = new char [tex2d->dataSize];
+      FileIn.read((char*)tex2d->data, std::streamsize(tex2d->dataSize));
 
       if(FileIn.fail() || FileIn.bad()) return tex2d;
       break;
@@ -234,7 +235,7 @@ Texture2DPtr gl_helpers::createTexture(std::string aFilename, bool aFilters) {
   glTexImage2D(GL_TEXTURE_2D, 0, Texture->internalFormat, Texture->width, Texture->height,
       0, Texture->format, Texture->type, Texture->data);
   glBindTexture(GL_TEXTURE_2D, 0);
-  delete (uint8_t*)Texture->data;
+  //delete (uint8_t*)Texture->data;
   Texture->Id = TextureName;
   Texture->texHandle = glGetTextureHandleARB(Texture->Id);
   glMakeTextureHandleResidentARB(Texture->texHandle);
@@ -253,7 +254,7 @@ GLuint gl_helpers::CreateBufferObject(size_t buff_size, void **data, GLenum buff
     GLuint buf;
     GLbitfield flags = GL_MAP_WRITE_BIT | GL_MAP_PERSISTENT_BIT | GL_MAP_COHERENT_BIT;
     glGenBuffers(1, &buf);
-    if (bufferType == GL_DRAW_INDIRECT_BUFFER) glBindBuffer(bufferType, buf);
+    if (bufferType == GL_DRAW_INDIRECT_BUFFER || bufferType == GL_TEXTURE_BUFFER) glBindBuffer(bufferType, buf);
     else glBindBufferBase(bufferType, 0, buf);
     glBufferStorage(bufferType, buff_size, NULL, flags | GL_DYNAMIC_STORAGE_BIT );
     *data = glMapBufferRange(bufferType, 0, buff_size, flags );
